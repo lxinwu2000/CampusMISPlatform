@@ -4840,3 +4840,96 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.027002s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
 [ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\3fa041b669677307b62ad37b823930c7.png'  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T16:48:54+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/logo
+[ info ] localhost:81/schoolyard/admin/Organizeinfo/logo [运行时间：0.206011s][吞吐率：4.85req/s] [内存消耗：2,637.48kb] [文件加载：54]
+[ info ] [ LANG ] F:\schoolyard\trunk\source\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'logo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:81',
+  'connection' => 'keep-alive',
+  'content-length' => '260758',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost:81',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryzw3tFRsUK0Y1WDYl',
+  'referer' => 'http://localhost:81/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->logo[ F:\schoolyard\trunk\source\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'logo' , 1 , 'admin' , 0 , 1517474934) [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\3f686b1dda3a4aad176d0de5b086beb5.png'  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T16:49:14+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost:81/schoolyard/admin/Organizeinfo/edit [运行时间：0.196011s][吞吐率：5.10req/s] [内存消耗：2,580.73kb] [文件加载：53]
+[ info ] [ LANG ] F:\schoolyard\trunk\source\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:81',
+  'connection' => 'keep-alive',
+  'content-length' => '1124',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost:81',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost:81/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"一切为了学生，为了学生一切，为了一切学生"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ F:\schoolyard\trunk\source\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517474954) [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='一切为了学生，为了学生一切，为了一切学生',`createtime`='2018-02-01 16:49:14',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.001000s ]
