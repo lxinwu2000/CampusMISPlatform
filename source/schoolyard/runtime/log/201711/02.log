@@ -1,0 +1,1824 @@
+---------------------------------------------------------------
+[ 2017-11-02T09:23:49+08:00 ] ::1 ::1 GET /wsjadmin/admin/Menu/index
+[ info ] localhost/wsjadmin/admin/Menu/index [运行时间：0.290215s][吞吐率：3.45req/s] [内存消耗：1,803.53kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T09:23:50+08:00 ] ::1 ::1 GET /wsjadmin/admin/login/index
+[ info ] localhost/wsjadmin/admin/login/index [运行时间：0.134008s][吞吐率：7.46req/s] [内存消耗：1,792.88kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/Menu/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\LoginController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: dosubmit[D:\phpStudy\WWW\wsjadmin\application\admin\controller\LoginController.php:23]
+---------------------------------------------------------------
+[ 2017-11-02T13:03:13+08:00 ] ::1 ::1 GET /wsjadmin/admin/login/index
+[ info ] localhost/wsjadmin/admin/login/index [运行时间：0.425024s][吞吐率：2.35req/s] [内存消耗：1,792.88kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/Menu/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\LoginController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: dosubmit[D:\phpStudy\WWW\wsjadmin\application\admin\controller\LoginController.php:23]
+---------------------------------------------------------------
+[ 2017-11-02T13:14:26+08:00 ] ::1 ::1 GET /wsjadmin/admin/Menu/index
+[ info ] localhost/wsjadmin/admin/Menu/index [运行时间：0.287017s][吞吐率：3.48req/s] [内存消耗：1,804.05kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:14:28+08:00 ] ::1 ::1 GET /wsjadmin/admin/login/index
+[ info ] localhost/wsjadmin/admin/login/index [运行时间：0.091006s][吞吐率：10.99req/s] [内存消耗：1,793.18kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/Menu/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\LoginController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: dosubmit[D:\phpStudy\WWW\wsjadmin\application\admin\controller\LoginController.php:23]
+---------------------------------------------------------------
+[ 2017-11-02T13:14:38+08:00 ] ::1 ::1 POST /wsjadmin/admin/login/index
+[ info ] localhost/wsjadmin/admin/login/index [运行时间：0.667038s][吞吐率：1.50req/s] [内存消耗：2,920.98kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/login/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'dosubmit' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\LoginController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\LoginController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073004s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin` [ RunTime:0.076005s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`password` FROM `zxcms_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_admin`  SET `lastlogintime`=1509599678,`lastloginip`=0  WHERE  `id` = 1 [ RunTime:0.082005s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:14:39+08:00 ] ::1 ::1 GET /wsjadmin/admin/index/index
+[ info ] localhost/wsjadmin/admin/index/index [运行时间：0.369021s][吞吐率：2.71req/s] [内存消耗：2,865.67kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/login/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.177011s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.016001s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:14:42+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.553031s][吞吐率：1.81req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:14:42+08:00 ] ::1 ::1 GET /wsjadmin/admin/index/favicon.ico
+[ info ] localhost/wsjadmin/admin/index/favicon.ico [运行时间：0.554032s][吞吐率：1.80req/s] [内存消耗：2,476.79kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.120007s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Index' , 'favicon.ico' , 1 , 'admin' , 0 , 1509599682) [ RunTime:0.118006s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:14:46+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.438025s][吞吐率：2.28req/s] [内存消耗：3,005.40kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509599685) [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:14:46+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.066003s][吞吐率：15.15req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:14:46+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/favicon.ico
+[ info ] localhost/wsjadmin/admin/Productype/favicon.ico [运行时间：0.243014s][吞吐率：4.11req/s] [内存消耗：2,489.92kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/Productype/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'favicon.ico' , 1 , 'admin' , 0 , 1509599686) [ RunTime:0.147008s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:16:18+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.198012s][吞吐率：5.05req/s] [内存消耗：3,183.41kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/Productype/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509599778) [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:16:19+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:20:41+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.251015s][吞吐率：3.98req/s] [内存消耗：3,183.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/Productype/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509600041) [ RunTime:0.047002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:20:41+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:20:43+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.528030s][吞吐率：1.89req/s] [内存消耗：3,005.72kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/Productype/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509600042) [ RunTime:0.357021s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:20:44+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:20:46+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/del?typeid=25
+[ info ] localhost/wsjadmin/admin/Productype/del?typeid=25 [运行时间：0.233014s][吞吐率：4.29req/s] [内存消耗：2,546.83kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'referer' => 'http://localhost/wsjadmin/admin/Productype/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'typeid' => '25',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->del[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('?typeid=25' , 'admin' , 'Productype' , 'del' , 1 , 'admin' , 0 , 1509600046) [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] DELETE FROM `zxcms_producttype`    WHERE  `typeid` = 25 [ RunTime:0.057003s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:20:49+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.204011s][吞吐率：4.90req/s] [内存消耗：3,005.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/Productype/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509600049) [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:20:50+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:20:52+08:00 ] ::1 ::1 GET /wsjadmin/admin/productype/info?typeid=36
+[ info ] localhost/wsjadmin/admin/productype/info?typeid=36 [运行时间：0.226013s][吞吐率：4.42req/s] [内存消耗：2,893.82kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'productype',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/Productype/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'typeid' => '36',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->info[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\info.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('?typeid=36' , 'admin' , 'Productype' , 'info' , 1 , 'admin' , 0 , 1509600052) [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` WHERE  `typeid` = 36 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:20:53+08:00 ] ::1 ::1 GET /wsjadmin/admin/productype/favicon.ico
+[ info ] localhost/wsjadmin/admin/productype/favicon.ico [运行时间：0.199012s][吞吐率：5.02req/s] [内存消耗：2,490.29kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'productype',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'favicon.ico' , 1 , 'admin' , 0 , 1509600053) [ RunTime:0.094005s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:20:53+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:21:00+08:00 ] ::1 ::1 POST /wsjadmin/admin/Productype/edit
+[ info ] localhost/wsjadmin/admin/Productype/edit [运行时间：0.784045s][吞吐率：1.28req/s] [内存消耗：2,624.51kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '79',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'name' => '华为huae',
+  'info' => '华为华为',
+  'typeid' => '36',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->edit[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'edit' , 1 , 'admin' , 0 , 1509600059) [ RunTime:0.436025s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `typeid` FROM `zxcms_producttype` WHERE  `name` = '华为huae'  AND `typeid` <> 36 LIMIT 1 [ RunTime:0.038002s ]
+[ sql ] [ SQL ] UPDATE `zxcms_producttype`  SET `name`='华为huae',`info`='华为华为'  WHERE  `typeid` = 36 [ RunTime:0.044002s ]
+[ error ] [8]Use of undefined constant Productype - assumed 'Productype'[D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php:41]
+---------------------------------------------------------------
+[ 2017-11-02T13:21:00+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.192011s][吞吐率：5.21req/s] [内存消耗：3,005.29kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509600060) [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:21:00+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:21:02+08:00 ] ::1 ::1 GET /wsjadmin/admin/productype/info?typeid=36
+[ info ] localhost/wsjadmin/admin/productype/info?typeid=36 [运行时间：0.206012s][吞吐率：4.85req/s] [内存消耗：2,893.87kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'productype',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/Productype/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'typeid' => '36',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->info[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\info.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('?typeid=36' , 'admin' , 'Productype' , 'info' , 1 , 'admin' , 0 , 1509600062) [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` WHERE  `typeid` = 36 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:21:03+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:21:06+08:00 ] ::1 ::1 POST /wsjadmin/admin/Productype/edit
+[ info ] localhost/wsjadmin/admin/Productype/edit [运行时间：0.308018s][吞吐率：3.25req/s] [内存消耗：2,624.56kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '75',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'name' => '华为',
+  'info' => '华为华为',
+  'typeid' => '36',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->edit[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'edit' , 1 , 'admin' , 0 , 1509600066) [ RunTime:0.062003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `typeid` FROM `zxcms_producttype` WHERE  `name` = '华为'  AND `typeid` <> 36 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_producttype`  SET `name`='华为',`info`='华为华为'  WHERE  `typeid` = 36 [ RunTime:0.103006s ]
+[ error ] [8]Use of undefined constant Productype - assumed 'Productype'[D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php:41]
+---------------------------------------------------------------
+[ 2017-11-02T13:21:06+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.178011s][吞吐率：5.62req/s] [内存消耗：3,005.30kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509600066) [ RunTime:0.041003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:21:07+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T13:34:38+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.315018s][吞吐率：3.17req/s] [内存消耗：3,005.48kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509600878) [ RunTime:0.104006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T13:34:39+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,438.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T15:06:11+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.587034s][吞吐率：1.70req/s] [内存消耗：3,005.58kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509606371) [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.084005s ]
+---------------------------------------------------------------
+[ 2017-11-02T15:06:13+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.199011s][吞吐率：5.02req/s] [内存消耗：1,438.20kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T15:13:55+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.341019s][吞吐率：2.93req/s] [内存消耗：3,005.55kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509606834) [ RunTime:0.178011s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-11-02T15:13:56+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,438.20kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T15:13:56+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.233013s][吞吐率：4.29req/s] [内存消耗：3,005.38kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509606836) [ RunTime:0.072004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T15:14:17+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.274015s][吞吐率：3.65req/s] [内存消耗：3,005.55kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509606857) [ RunTime:0.118006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T15:14:30+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.337020s][吞吐率：2.97req/s] [内存消耗：3,005.55kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509606870) [ RunTime:0.196012s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T15:14:45+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.366021s][吞吐率：2.73req/s] [内存消耗：3,005.55kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1506310819; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509606884) [ RunTime:0.192011s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-11-02T16:03:13+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.267015s][吞吐率：3.75req/s] [内存消耗：3,005.77kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1509607802; Hm_lpvt_b393d153aeb26b46e9431fabaf0f6190=1509609699',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509609793) [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T16:03:14+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.115007s][吞吐率：8.70req/s] [内存消耗：1,438.45kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1509607802; Hm_lpvt_b393d153aeb26b46e9431fabaf0f6190=1509609699',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T16:03:17+08:00 ] ::1 ::1 GET /wsjadmin/admin/Productype/index
+[ info ] localhost/wsjadmin/admin/Productype/index [运行时间：0.333019s][吞吐率：3.00req/s] [内存消耗：3,005.77kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Productype',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/admin/productype/info?typeid=36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1509607802; Hm_lpvt_b393d153aeb26b46e9431fabaf0f6190=1509609699',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ProductypeController->index[ D:\phpStudy\WWW\wsjadmin\application\admin\controller\ProductypeController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\wsjadmin/application/admin\view\productype\index.html [ array (
+  0 => 'typelist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\wsjadmin\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5auth;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Productype' , 'index' , 1 , 'admin' , 0 , 1509609797) [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_producttype` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_producttype` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_producttype` LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-11-02T16:03:18+08:00 ] ::1 ::1 GET /wsjadmin/public/static/artDialog/icons/loading.gif
+[ info ] localhost/wsjadmin/public/static/artDialog/icons/loading.gif [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：1,438.45kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\wsjadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'artDialog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/wsjadmin/public/static/artDialog/dialog.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; PHPSESSID=ii755q7dvrvs565hsbgmqt0hq2; pgv_si=s4622198784; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1509607802; Hm_lpvt_b393d153aeb26b46e9431fabaf0f6190=1509609699',
+)
+[ info ] [ PARAM ] array (
+  'icons' => 'loading.gif',
+)
+[ info ] [ LOG ] INIT File

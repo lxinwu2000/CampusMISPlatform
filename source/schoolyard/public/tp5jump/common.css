@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+.layui-form-labelsave .layui-form-label{
+	width:110px!important;
+}
+img{
+	display:block !important;
+	max-width:100% !important;
+}
+.simg{
+	display:block !important;
+	max-width:100% !important;
+}
+

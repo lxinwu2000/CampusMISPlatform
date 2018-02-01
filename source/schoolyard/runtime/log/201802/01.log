@@ -1,0 +1,2342 @@
+---------------------------------------------------------------
+[ 2018-02-01T09:23:09+08:00 ] ::1 ::1 GET /schoolyard/admin/Log/index
+[ info ] localhost/schoolyard/admin/Log/index [运行时间：0.442025s][吞吐率：2.26req/s] [内存消耗：1,797.78kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-01T09:23:11+08:00 ] ::1 ::1 GET /schoolyard/admin/login/index
+[ info ] localhost/schoolyard/admin/login/index [运行时间：0.231613s][吞吐率：4.32req/s] [内存消耗：1,798.64kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/Log/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\LoginController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: dosubmit[D:\phpStudy\WWW\schoolyard\application\admin\controller\LoginController.php:23]
+---------------------------------------------------------------
+[ 2018-02-01T09:23:22+08:00 ] ::1 ::1 POST /schoolyard/admin/login/index
+[ info ] localhost/schoolyard/admin/login/index [运行时间：0.311018s][吞吐率：3.22req/s] [内存消耗：2,926.52kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/login/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'dosubmit' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\LoginController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\LoginController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin` [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`password` FROM `zxcms_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_admin`  SET `lastlogintime`=1517448202,`lastloginip`=0  WHERE  `id` = 1 [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:23:25+08:00 ] ::1 ::1 GET /schoolyard/admin/index/index
+[ info ] localhost/schoolyard/admin/index/index [运行时间：0.209012s][吞吐率：4.78req/s] [内存消耗：2,873.14kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/login/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:23:26+08:00 ] ::1 ::1 GET /schoolyard/admin/index/favicon.ico
+[ info ] localhost/schoolyard/admin/index/favicon.ico [运行时间：0.240203s][吞吐率：4.16req/s] [内存消耗：2,482.59kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.062400s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Index' , 'favicon.ico' , 1 , 'admin' , 0 , 1517448205) [ RunTime:0.031200s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:23:38+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.329019s][吞吐率：3.04req/s] [内存消耗：2,901.24kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517448217) [ RunTime:0.077005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:23:39+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/favicon.ico
+[ info ] localhost/schoolyard/admin/Organizeinfo/favicon.ico [运行时间：0.247406s][吞吐率：4.04req/s] [内存消耗：2,498.46kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'favicon.ico' , 1 , 'admin' , 0 , 1517448219) [ RunTime:0.104601s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:24:12+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/logo
+[ info ] localhost/schoolyard/admin/Organizeinfo/logo [运行时间：0.337416s][吞吐率：2.96req/s] [内存消耗：2,631.52kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'logo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '279219',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNR3GIsnYMXEMRPsh',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->logo[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'logo' , 1 , 'admin' , 0 , 1517448251) [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\5b055498b9f8e569370be4580a75e72f.png'  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:24:16+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.196011s][吞吐率：5.10req/s] [内存消耗：2,575.42kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1085',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"logopath":"/public/uploads/logo/20180201\\\\5b055498b9f8e569370be4580a75e72f.png","cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"暂无录入"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517448256) [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\5b055498b9f8e569370be4580a75e72f.png',`cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='暂无录入',`createtime`='2018-02-01 09:24:16',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:25:41+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/logo
+[ info ] localhost/schoolyard/admin/Organizeinfo/logo [运行时间：0.343020s][吞吐率：2.92req/s] [内存消耗：2,631.52kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'logo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '353151',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarylkTwa1wU4Mf7XF1v',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->logo[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'logo' , 1 , 'admin' , 0 , 1517448340) [ RunTime:0.211012s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\39ac62076cbd509decf56da8d2d957a9.png'  WHERE  `rid` = 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:26:26+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.215013s][吞吐率：4.65req/s] [内存消耗：2,901.52kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517448386) [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:26:29+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/logo
+[ info ] localhost/schoolyard/admin/Organizeinfo/logo [运行时间：0.268016s][吞吐率：3.73req/s] [内存消耗：2,631.52kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'logo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '309209',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary6v7uTUrC2zpBVUU9',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->logo[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'logo' , 1 , 'admin' , 0 , 1517448389) [ RunTime:0.128008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\a0b865c617364e5765b26edc66ba2dbd.png'  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:31:42+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.307018s][吞吐率：3.26req/s] [内存消耗：2,903.17kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517448702) [ RunTime:0.127007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:31:45+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/logo
+[ info ] localhost/schoolyard/admin/Organizeinfo/logo [运行时间：0.305018s][吞吐率：3.28req/s] [内存消耗：2,632.94kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'logo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '321992',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryHkMyHJRqdbXALpaV',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->logo[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'logo' , 1 , 'admin' , 0 , 1517448705) [ RunTime:0.142008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\ce96c77700609af5d6d04edff4225413.png'  WHERE  `rid` = 1 [ RunTime:0.017001s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:32:07+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/logo
+[ info ] localhost/schoolyard/admin/Organizeinfo/logo [运行时间：0.272015s][吞吐率：3.68req/s] [内存消耗：2,632.94kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'logo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '279219',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryuQ7RBfL9o5BREZaQ',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->logo[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.057004s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'logo' , 1 , 'admin' , 0 , 1517448727) [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\0f8a505dedb0e3376d9f60700b46654c.png'  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:39:02+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.273015s][吞吐率：3.66req/s] [内存消耗：2,900.98kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517449141) [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:39:07+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.176010s][吞吐率：5.68req/s] [内存消耗：2,573.66kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '971',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学","remark":"暂无录入"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517449146) [ RunTime:0.059004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学',`remark`='暂无录入',`createtime`='2018-02-01 09:39:07',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:39:13+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.252014s][吞吐率：3.97req/s] [内存消耗：2,900.98kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517449153) [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:39:17+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.511030s][吞吐率：1.96req/s] [内存消耗：2,573.62kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '980',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"暂无录入"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517449156) [ RunTime:0.382022s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='暂无录入',`createtime`='2018-02-01 09:39:17',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:39:24+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.254015s][吞吐率：3.94req/s] [内存消耗：2,900.98kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517449164) [ RunTime:0.075004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:45:20+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.221012s][吞吐率：4.52req/s] [内存消耗：2,574.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1124',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"一切为了学生，为了学生一切，为了一切学生"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517449520) [ RunTime:0.083005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='一切为了学生，为了学生一切，为了一切学生',`createtime`='2018-02-01 09:45:20',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:45:25+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.258015s][吞吐率：3.88req/s] [内存消耗：2,901.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517449525) [ RunTime:0.090005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:45:30+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.226012s][吞吐率：4.42req/s] [内存消耗：2,573.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '944',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":""}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517449529) [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='',`createtime`='2018-02-01 09:45:29',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:45:32+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.250015s][吞吐率：4.00req/s] [内存消耗：2,900.95kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517449532) [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:45:36+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/logo
+[ info ] localhost/schoolyard/admin/Organizeinfo/logo [运行时间：0.257015s][吞吐率：3.89req/s] [内存消耗：2,630.90kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'logo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '321992',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryTAIUBVIZgaNgA8Zt',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->logo[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'logo' , 1 , 'admin' , 0 , 1517449536) [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\8b2ba888192bae8a09d0f38f20aecf29.png'  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:45:39+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.301017s][吞吐率：3.32req/s] [内存消耗：2,900.95kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517449538) [ RunTime:0.161010s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:50:22+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.274016s][吞吐率：3.65req/s] [内存消耗：2,900.95kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517449821) [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:50:35+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.212012s][吞吐率：4.72req/s] [内存消耗：2,574.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1124',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"一切为了学生，为了学生一切，为了一切学生"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517449835) [ RunTime:0.100005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='一切为了学生，为了学生一切，为了一切学生',`createtime`='2018-02-01 09:50:35',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:50:37+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.222013s][吞吐率：4.50req/s] [内存消耗：2,901.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517449837) [ RunTime:0.061004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.006000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:50:43+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.203011s][吞吐率：4.93req/s] [内存消耗：2,573.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '944',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":""}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517449843) [ RunTime:0.073004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='',`createtime`='2018-02-01 09:50:43',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:50:45+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.265015s][吞吐率：3.77req/s] [内存消耗：2,900.95kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517449845) [ RunTime:0.116007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.008001s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:53:13+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/logo
+[ info ] localhost/schoolyard/admin/Organizeinfo/logo [运行时间：0.279016s][吞吐率：3.58req/s] [内存消耗：2,630.90kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'logo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '279219',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryUkAOQpen8IA2Eo0e',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->logo[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'logo' , 1 , 'admin' , 0 , 1517449993) [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\bbb38b184eb56a6483f8f595dde1daca.png'  WHERE  `rid` = 1 [ RunTime:0.004000s ]
+---------------------------------------------------------------
+[ 2018-02-01T09:53:15+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.482028s][吞吐率：2.07req/s] [内存消耗：2,900.95kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517449994) [ RunTime:0.330018s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T10:11:56+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.209012s][吞吐率：4.78req/s] [内存消耗：2,574.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1124',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"一切为了学生，为了学生一切，为了一切学生"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517451116) [ RunTime:0.073004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='一切为了学生，为了学生一切，为了一切学生',`createtime`='2018-02-01 10:11:56',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T10:12:38+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.280016s][吞吐率：3.57req/s] [内存消耗：2,901.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517451158) [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T10:12:40+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.227013s][吞吐率：4.41req/s] [内存消耗：2,574.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1124',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"一切为了学生，为了学生一切，为了一切学生"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517451160) [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='一切为了学生，为了学生一切，为了一切学生',`createtime`='2018-02-01 10:12:40',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T10:12:45+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.287016s][吞吐率：3.48req/s] [内存消耗：2,900.89kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517451165) [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T10:13:04+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.309017s][吞吐率：3.24req/s] [内存消耗：2,901.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517451184) [ RunTime:0.102006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T10:13:06+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.198012s][吞吐率：5.05req/s] [内存消耗：2,574.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1124',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"一切为了学生，为了学生一切，为了一切学生"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517451186) [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='一切为了学生，为了学生一切，为了一切学生',`createtime`='2018-02-01 10:13:06',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:37:27+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.523030s][吞吐率：1.91req/s] [内存消耗：2,901.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072004s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517456247) [ RunTime:0.074005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.051002s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:37:31+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.586033s][吞吐率：1.71req/s] [内存消耗：2,574.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1124',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"一切为了学生，为了学生一切，为了一切学生"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517456250) [ RunTime:0.422024s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='一切为了学生，为了学生一切，为了一切学生',`createtime`='2018-02-01 11:37:31',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:37:33+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.255015s][吞吐率：3.92req/s] [内存消耗：2,574.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1124',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"一切为了学生，为了学生一切，为了一切学生"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517456253) [ RunTime:0.090005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='一切为了学生，为了学生一切，为了一切学生',`createtime`='2018-02-01 11:37:33',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:38:07+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.215012s][吞吐率：4.65req/s] [内存消耗：2,901.23kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517456287) [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:38:10+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/favicon.ico
+[ info ] localhost/schoolyard/admin/Organizeinfo/favicon.ico [运行时间：0.244014s][吞吐率：4.10req/s] [内存消耗：2,498.49kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'favicon.ico' , 1 , 'admin' , 0 , 1517456290) [ RunTime:0.077004s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:38:10+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.293017s][吞吐率：3.41req/s] [内存消耗：2,901.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517456290) [ RunTime:0.074005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:38:13+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.251014s][吞吐率：3.98req/s] [内存消耗：2,901.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517456293) [ RunTime:0.080004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:38:15+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.152009s][吞吐率：6.58req/s] [内存消耗：2,574.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1124',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58888","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"一切为了学生，为了学生一切，为了一切学生"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517456295) [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58888',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='一切为了学生，为了学生一切，为了一切学生',`createtime`='2018-02-01 11:38:15',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:41:36+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/edit
+[ info ] localhost/schoolyard/admin/Organizeinfo/edit [运行时间：0.215012s][吞吐率：4.65req/s] [内存消耗：2,574.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1124',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"cnname":"清华大学","enname":"THU(Tsinghua University)","phone":"0371-58889","postcode":"46000","address":"zheng","Legalrepresentative":"王双杰","website":"http://www.xiaocaoblog.top/grbk/","email":"qhdx@qq.com","schoolmotto":"自强不息，厚德载物","businessphilosophy":"一切为了学生，为了学生一切，为了一切学生","servicepurpose":"一切为了学生，为了学生一切，为了一切学生","remark":"一切为了学生，为了学生一切，为了一切学生"}',
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->edit[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'edit' , 1 , 'admin' , 0 , 1517456495) [ RunTime:0.060004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `cnname`='清华大学',`enname`='THU(Tsinghua University)',`phone`='0371-58889',`postcode`='46000',`address`='zheng',`Legalrepresentative`='王双杰',`website`='http://www.xiaocaoblog.top/grbk/',`email`='qhdx@qq.com',`schoolmotto`='自强不息，厚德载物',`businessphilosophy`='一切为了学生，为了学生一切，为了一切学生',`servicepurpose`='一切为了学生，为了学生一切，为了一切学生',`remark`='一切为了学生，为了学生一切，为了一切学生',`createtime`='2018-02-01 11:41:36',`createuser`=1  WHERE  `rid` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:41:39+08:00 ] ::1 ::1 GET /schoolyard/admin/Organizeinfo/index
+[ info ] localhost/schoolyard/admin/Organizeinfo/index [运行时间：0.335019s][吞吐率：2.98req/s] [内存消耗：2,901.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/schoolyard/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->index[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\schoolyard/application/admin\view\organizeinfo\index.html [ array (
+  0 => 'orglist',
+) ]
+[ info ] [ RUN ] app\admin\widget\Menu->index[ D:\phpStudy\WWW\schoolyard\application\admin\widget\Menu.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'index' , 1 , 'admin' , 0 , 1517456499) [ RunTime:0.135008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_menu` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `zxcms_menu` WHERE  `display` = 1 ORDER BY listorder asc [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parentid` FROM `zxcms_menu` WHERE  `c` = 'Organizeinfo'  AND `a` = 'index' LIMIT 1 [ RunTime:0.003001s ]
+---------------------------------------------------------------
+[ 2018-02-01T11:41:46+08:00 ] ::1 ::1 POST /schoolyard/admin/Organizeinfo/logo
+[ info ] localhost/schoolyard/admin/Organizeinfo/logo [运行时间：0.490028s][吞吐率：2.04req/s] [内存消耗：2,630.90kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\schoolyard\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Organizeinfo',
+    2 => 'logo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '321992',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryfdIWB5WhXc3C6gw6',
+  'referer' => 'http://localhost/schoolyard/admin/Organizeinfo/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=2312885248; ECS[visit_times]=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1505789266; UM_distinctid=15ead090a8a34-0d61266ec08128-6315107d-100200-15ead090a8b273; CNZZDATA30088308=cnzz_eid%3D2006178242-1506140117-http%253A%252F%252Flocalhost%252F%26ntime%3D1506140117; Huiskin=blue; bdshare_firstime=1509614151739; Hm_lvt_7b1919221e89d2aa5711e4deb935debd=1511850579,1512012827,1512090539; PHPSESSID=54ldtr11p3t8k4pislerbg02h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\OrganizeinfoController->logo[ D:\phpStudy\WWW\schoolyard\application\admin\controller\OrganizeinfoController.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=schoolyard;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_admin_log` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] INSERT INTO `zxcms_admin_log` (`querystring` , `m` , `c` , `a` , `userid` , `username` , `ip` , `time`) VALUES ('' , 'admin' , 'Organizeinfo' , 'logo' , 1 , 'admin' , 0 , 1517456505) [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zxcms_organizeinfo` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zxcms_organizeinfo` LIMIT 1 [ RunTime:0.149009s ]
+[ sql ] [ SQL ] UPDATE `zxcms_organizeinfo`  SET `logopath`='/public/uploads/logo/20180201\\1102f12200bf4bc2424cec9f5c53f9a1.png'  WHERE  `rid` = 1 [ RunTime:0.008001s ]
