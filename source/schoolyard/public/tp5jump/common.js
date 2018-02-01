@@ -55,9 +55,9 @@ function Ajaxalls(id,data,n,path){
 			dataType: "json",			
 			success: function(data){
 			if(data.state==1){		
-			 layer.msg('修改成功！',{icon:6,time:1000});		   		 				    		  
+			 layer.msg(data.msg,{icon:6,time:1000});		   		 				    		  
 			}else{
-			layer.msg('修改失败！',{icon:5,time:1000});	
+			layer.msg(data.msg,{icon:5,time:1000});	
 			}
 			},
 			error:function(){
@@ -73,9 +73,9 @@ function Ajaxalls(id,data,n,path){
 			dataType: "json",			
 			success: function(data){
 				if(data.state==1){		
-					 layer.msg('删除成功！',{icon:6,time:1000});		   		 				    		  
+					 layer.msg(data.msg,{icon:6,time:1000});		   		 				    		  
 					}else{
-					layer.msg('删除失败！',{icon:5,time:1000});	
+					layer.msg(data.msg,{icon:5,time:1000});	
 					}
 					},
 					error:function(){
@@ -91,9 +91,9 @@ function Ajaxalls(id,data,n,path){
 			dataType: "json",			
 			success: function(data){
 				if(data.state==1){		
-					 layer.msg('添加成功！',{icon:6,time:1000});		   		 				    		  
+					 layer.msg(data.msg,{icon:6,time:1000});		   		 				    		  
 					}else{
-					layer.msg('添加失败！',{icon:5,time:1000});	
+					layer.msg(data.msg,{icon:5,time:1000});	
 					}
 					},
 					error:function(){
