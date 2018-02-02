@@ -16,7 +16,7 @@ layui.use(['element','layer'], function(){
 //url 接口
 
 //调用示列 edit ：Ajaxalls(rid,data,1,'admin/Organizeinfo/edit'); 
-//      add ：Ajaxalls(rid,data,n,'admin/Organizeinfo/add'); 
+//      add ：Ajaxalls(null,data,n,'admin/Organizeinfo/add'); 
 //      delete ：Ajaxalls(rid,data,2,'admin/Organizeinfo/delete');
 
 //后台示列
@@ -39,12 +39,7 @@ layui.use(['element','layer'], function(){
 
 var id,data,n,path;
 function Ajaxalls(id,data,n,path){
-	id=Number(id);
-	if(id==0){
-	 return false;
-	}else{
-		id=Number(id);
-	}
+	
 	switch(n)
 	{	
 	case 1:	

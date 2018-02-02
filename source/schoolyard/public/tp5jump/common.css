@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 .layui-form-labelsave .layui-form-label{
 	width:110px!important;
+	font-size:11px;
 }
 img{
 	display:block !important;
