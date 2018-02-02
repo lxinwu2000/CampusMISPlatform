@@ -17,14 +17,13 @@
     <span style="color:red;margin-left:40px;">备注*必填</span>
     
 	  
-    <form class="layui-form layui-form-labelsave" action="">    
-  
-       
+    <form class="layui-form layui-form-labelsave" action="">     
+       <input type="hidden" value="{$copylist.rid}" id="copyid"/>
     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">版权所有<span style="color:red;">*</span></label>
 		    <div class="layui-input-block">
-		      <input type="text" name="reserved" value="" lay-verify="required" placeholder="请输入版权" autocomplete="off" class="layui-input">
+		      <input type="text" name="reserved" value="{$copylist.reserved}" lay-verify="required" placeholder="请输入版权" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
     </div>	
@@ -33,7 +32,7 @@
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">域名备案号</label>
 		    <div class="layui-input-block">
-		      <input type="text" name="ipbeiannumber" value=""  placeholder="请输入域名" autocomplete="off" class="layui-input">
+		      <input type="text" name="ipbeiannumber" value="{$copylist.ipbeiannumber}"  placeholder="请输入域名" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
     </div>	
@@ -42,7 +41,7 @@
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">ip备案链接</label>
 		    <div class="layui-input-block">
-		      <input type="text" name="ipbeianhref" value=""   placeholder="请输入ip备案链接" autocomplete="off" class="layui-input">
+		      <input type="text" name="ipbeianhref" value="{$copylist.ipbeianhref}"   placeholder="请输入ip备案链接" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
     </div>	
@@ -51,7 +50,7 @@
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">公安备案号</label>
 		    <div class="layui-input-block">
-		      <input type="text" name="policebeiannumber" value=""   placeholder="请输入公安备案号" autocomplete="off" class="layui-input">
+		      <input type="text" name="policebeiannumber" value="{$copylist.policebeiannumber}"   placeholder="请输入公安备案号" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
     </div>	
@@ -60,7 +59,7 @@
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">公安备案链接</label>
 		    <div class="layui-input-block">
-		      <input type="text" name="policebeianhref" value=""   placeholder="请输入公安备案链接" autocomplete="off" class="layui-input">
+		      <input type="text" name="policebeianhref" value="{$copylist.policebeianhref}"   placeholder="请输入公安备案链接" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
     </div>	
@@ -69,7 +68,7 @@
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">技术支持</label>
 		    <div class="layui-input-block">
-		      <input type="text" name="techsupport" value=""   placeholder="请输入技术支持" autocomplete="off" class="layui-input">
+		      <input type="text" name="techsupport" value="{$copylist.techsupport}"   placeholder="请输入技术支持" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
     </div>	
@@ -78,7 +77,7 @@
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">技术支持链接<span style="color:red;">*</span></label>
 		    <div class="layui-input-block">
-		      <input type="text" name="supporthref" value=""   lay-verify="url" placeholder="请输入技术支持链接" autocomplete="off" class="layui-input">
+		      <input type="text" name="supporthref" value="{$copylist.supporthref}"   lay-verify="url" placeholder="请输入技术支持链接" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
     </div>	
@@ -87,7 +86,7 @@
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">技术支持电话</label>
 		    <div class="layui-input-block">
-		      <input type="text" name="supportphone" value=""   placeholder="请输入技术支持电话" autocomplete="off" class="layui-input">
+		      <input type="text" name="supportphone" value="{$copylist.supportphone}"   placeholder="请输入技术支持电话" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
     </div>	
@@ -95,7 +94,7 @@
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">技术支持邮箱<span style="color:red;">*</span></label>
 		    <div class="layui-input-block">
-		      <input type="text" name="supportemail" value="" lay-verify="email"  placeholder="请输入技术支持邮箱" autocomplete="off" class="layui-input">
+		      <input type="text" name="supportemail" value="{$copylist.supportemail}" lay-verify="email"  placeholder="请输入技术支持邮箱" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
     </div>	
@@ -105,7 +104,7 @@
 		  <div class="layui-form-item layui-form-text">
     <label class="layui-form-label">备注：</label>   
     <div class="layui-input-block">
-      <textarea name="remark" placeholder="请输入备注" class="layui-textarea"></textarea>
+      <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$copylist.remark}</textarea>
     </div>
   </div>
     </div>	

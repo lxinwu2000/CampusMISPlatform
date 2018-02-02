@@ -4,20 +4,23 @@ use think\Request;
 
 class CopyrightinfoController extends CommonController{
     public function index(){
+        $list=db('copyrightinfo')->find();
+        $this->assign('copylist',$list);
        return  $this->fetch();
     }
-    public function add(){
+    public function edit(){
         $request=Request::instance();
         $info=json_decode($request->post('data'),true);
         $info['createtime']=date('Y-m-d H:i:s');
         $info['createuser']=session('user_id');
-        $res=db('copyrightinfo')->insert($info);
+        $rid=input('post.id');
+        $res=db('copyrightinfo')->where('rid',$rid)->update($info);
          if ($res){
-            $data['msg']='添加成功';
+            $data['msg']='修改成功';
             $data['state']=1;
             return json($data);
         }else {
-            $data['msg']='添加失败';
+            $data['msg']='修改失败';
             $data['state']=0;
             return json($data);
         }
