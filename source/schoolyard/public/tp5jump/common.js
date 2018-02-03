@@ -37,9 +37,8 @@ layui.use(['element','layer'], function(){
 //        
 //    }    
 
-var id,data,n,path;
-function Ajaxalls(id,data,n,path){
-	
+var id,data,n,path,skip;
+function Ajaxalls(id,data,n,path,skip){
 	switch(n)
 	{	
 	case 1:	
@@ -50,7 +49,12 @@ function Ajaxalls(id,data,n,path){
 			dataType: "json",			
 			success: function(data){
 			if(data.state==1){		
-			 layer.msg(data.msg,{icon:6,time:1000});		   		 				    		  
+			 layer.msg(data.msg,{icon:6,time:1000});
+			 if(!skip){
+					return false;
+				}else{
+					return  location.href = Root+skip;
+			  }			 
 			}else{
 			layer.msg(data.msg,{icon:5,time:1000});	
 			}
@@ -68,8 +72,13 @@ function Ajaxalls(id,data,n,path){
 			dataType: "json",			
 			success: function(data){
 				if(data.state==1){		
-					 layer.msg(data.msg,{icon:6,time:1000});		   		 				    		  
-					}else{
+					 layer.msg(data.msg,{icon:6,time:1000});
+					 if(!skip){
+							return false;
+						}else{
+							return  location.href = Root+skip;
+					  }		
+			 }else{
 					layer.msg(data.msg,{icon:5,time:1000});	
 					}
 					},
@@ -86,7 +95,12 @@ function Ajaxalls(id,data,n,path){
 			dataType: "json",			
 			success: function(data){
 				if(data.state==1){		
-					 layer.msg(data.msg,{icon:6,time:1000});		   		 				    		  
+					 layer.msg(data.msg,{icon:6,time:1000});
+					 if(!skip){
+							return false;
+						}else{
+							return  location.href = Root+skip;
+					  }		
 					}else{
 					layer.msg(data.msg,{icon:5,time:1000});	
 					}
