@@ -112,3 +112,94 @@ function Ajaxalls(id,data,n,path,skip){
 	}
 		
 }
+
+//全选、批量删除
+//批量删除示列
+//1,在需要批量删除的button上加class="deleteinbatches" data-deleteinbatches="[true,url]" 
+//true执行批量删除,url 删除的接口
+//<button class="deleteinbatches" data-deleteinbatches="[true,deleteall]">批量删除</button>
+//全选示列
+//<input type="checkbox"   data-select="selectall"/>
+//直接加 data-select="selectall"即可
+
+function deleteinbatches(data,paths){
+	  $.ajax({
+			url: paths,
+			type: "post",
+			data:{"data":data},
+			dataType: "json",			
+			success: function(data){
+			if(data.state==1){		
+		    layer.msg(data.msg,{icon:6,time:1000});	
+			location.href =location.href;			
+			}else{
+		    layer.msg(data.msg,{icon:5,time:1000});	
+			}
+			},
+			error:function(){
+		    layer.msg('服务异常');	
+			
+		}			
+		});		
+}
+
+function turedel(){	
+	  var vessel=$("input[data-select='selectall']").attr('data-select');	
+	  var id ='input:not('+'#'+vessel+')';	
+	  var checkobj =$(id);	
+	  var $selectall=document.getElementById('selectall');	 
+	  if($selectall.checked==false){	 
+	    for(var i=0;i<checkobj.length;i++){
+		  checkobj[i].checked = false;		
+		} 		
+	  }
+	  else if($selectall.checked==true){
+	    for(var i=0;i<checkobj.length;i++){
+	    	checkobj[i].checked = true;		    	
+		}	   
+	  } 	  
+}
+$(function(){
+	var vessel=$("input[data-select='selectall']").attr('data-select');	
+	$("input[data-select='selectall']").attr('id',vessel);
+	var vesselid='#'+$("input[data-select='selectall']").attr('id');	
+	$(vesselid).click(function(){		
+		turedel();
+	});
+	var flags=$(".deleteinbatches").attr('data-deleteinbatches');
+	if(!flags){
+		return false;
+	}else{
+		flags=flags.replace(/\[|]/g,'');
+		var str=flags.split(',');
+	}
+   if(String(str[0])=='true' && str[1]!=''){
+	   $(".deleteinbatches").click(function(){
+	      var data=[];
+	      var urls=str[1];	      
+		  var vessel=$("input[data-select='selectall']").attr('data-select');	
+		  var id ='input:not('+'#'+vessel+')';	
+		  var selectid =$(id);	
+			for (var i = 0; i < selectid.length; i++) {		
+				if (selectid.eq(i).prop("checked")) {
+					data[i]=selectid.eq(i).val();			
+				}		
+			}
+			if(data.length==0){
+		     layer.msg('没有选择要删除的数据',{icon:5,time:1000});	
+		 	 return false;
+			}else{
+				 layer.confirm('真的删除这些数据吗', function(index){ 
+					 deleteinbatches(data,urls);
+				 });
+			}
+		
+	   });
+   }else{	   
+   	return false;
+   }
+});
+
+
+
+

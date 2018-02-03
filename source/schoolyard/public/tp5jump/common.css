@@ -12,3 +12,9 @@ img{
 	max-width:100% !important;
 }
 
+.layui-elips{
+	width:100px!important;
+}
+.zzqy input{
+	border:none;
+}
