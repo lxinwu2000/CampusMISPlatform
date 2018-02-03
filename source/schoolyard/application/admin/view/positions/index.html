@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="{:config('public.tp5jump')}/layui/css/layui.css" />
+<link rel="stylesheet" href="{:config('public.tp5jump')}/common.css" />
+<div class="page-content">
+    <div class="col-sm-6 pull-right">
+       <span class="btn btn-sm btn-primary pull-right" onclick="javascript:window.location.href = 'info'">
+            添加
+            <i class="icon-reply icon-only"></i>
+        </span>
+    </div>
+    <div class="page-header">
+        <h1>
+            {:model('menu')->getName()}             
+        </h1>
+    </div><!-- /.page-header -->
+    <div class="row">
+   <table class="layui-table" lay-size="sm">
+  <thead>
+   <tr>
+    <th colspan="1">操作区域</th> 
+    <th colspan="6" class="zzqy">
+    <button data-deleteinbatches="[true,deleteall]" class="deleteinbatches layui-btn layui-btn-danger layui-btn-xs">批量删除</button>
+    &nbsp; &nbsp;<input type="text" id="search" value="" placeholder="请输入姓名" autocomplete="off">
+    <button class="layui-btn layui-btn-sm" onclick="search()">搜索</button>
+    </th> 
+   </tr> 
+    <tr>
+      <th><input type="checkbox" class="ace" data-select="selectall"/><span class="lbl"></span></th>
+      <th>记录编号</th>
+      <th>中文名</th>
+      <th>英文名</th>
+      <th>简介</th>
+      <th>备注</th>
+      <th>操作</th>
+    </tr> 
+  </thead>
+  <tbody id="poslist"></tbody> 
+  </table>
+ <div id="pagelist"></div>
+    </div><!-- /.row -->
+</div><!-- /.page-content -->
+ <script src="{:config('public.tp5jump')}/layui/layui.js"></script>
+ <script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
+  <script src="{:config('public.tp5jump')}/common.js"></script> 
+ <script src="{:config('public.tp5jump')}/positions.js"></script> 
+
+
