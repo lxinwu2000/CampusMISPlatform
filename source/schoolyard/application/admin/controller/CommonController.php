@@ -51,7 +51,7 @@ class CommonController extends Controller {
         }
         $c = strtolower(request()->controller());
         $a = strtolower(request()->action());
-
+       
         if (preg_match('/^public_/', $a)) {
             return true;
         }

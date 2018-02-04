@@ -13,46 +13,46 @@
                 
             <small>
                 <i class="ace-icon fa fa-angle-double-right"></i>
-                {:input('id')?'编辑':'新增'}
+                {:input('rid')?'编辑':'新增'}
             </small>
         </h1>
     </div><!-- /.page-header -->
     <div class="row">
-    <input type="hidden" id="postrid" value="">
+    <input type="hidden" id="postrid" value="{$editone.rid}">
     <form class="layui-form layui-form-labelsave" id="form" action="">    
           
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">中文名<span style="color:red;">*</span></label>
 		    <div class="layui-input-block">
-		      <input type="text" name="cnname" value=""  lay-verify="required" placeholder="请输入中文名" autocomplete="off" class="layui-input">
+		      <input type="text" name="cnname" value="{$editone.cnname}"  lay-verify="required" placeholder="请输入中文名" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
         
 		   <div class="layui-form-item">
 		    <label class="layui-form-label">英文名</span></label>
 		    <div class="layui-input-block">
-		      <input type="text" name="enname" value=""   placeholder="请输入英文名" autocomplete="off" class="layui-input">
+		      <input type="text" name="enname" value="{$editone.enname}"   placeholder="请输入英文名" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
     	   	 
 		  <div class="layui-form-item">                    
 		    <label class="layui-form-label">简介<span style="color:red;">*</span></label>		    
 		     <div class="layui-input-block">
-			    <textarea name="introduce" id="positions_editor" placeholder="请输入简介" class="layui-textarea"></textarea>
+			    <textarea name="introduce" id="positions_editor" placeholder="请输入简介" class="layui-textarea">{$editone.introduce}</textarea>
 			  </div>			    
 		  </div>
 		  
 		  <div class="layui-form-item">                    
 		    <label class="layui-form-label">备注</label>		    
 		     <div class="layui-input-block">
-			    <textarea name="remark" placeholder="请输入备注" class="layui-textarea"></textarea>
+			    <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$editone.remark}</textarea>
 			  </div>			    
 		  </div>
     	
      
   <div class="layui-form-item">
     <div class="layui-input-block">
-      <button class="layui-btn" lay-submit lay-filter="positions">新增职务信息</button>     
+      <button class="layui-btn" lay-submit lay-filter="positions">{:input('rid')?'编辑':'新增'}职务信息</button>     
     </div>
   </div>
 </form>   
@@ -62,4 +62,4 @@
 <script src="{:config('public.tp5jump')}/layui/layui.js"></script>
 <script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
 <script src="{:config('public.tp5jump')}/common.js"></script> 
-<script src="{:config('public.tp5jump')}/positions.js"></script> 
+<script src="{:config('public.tp5jump')}/positions_add.js"></script> 

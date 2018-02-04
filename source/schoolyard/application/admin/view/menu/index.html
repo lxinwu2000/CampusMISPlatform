@@ -1,4 +1,9 @@
 <div class="page-content">
+  <style>
+.url .fa{
+	font-size:25px;
+}
+ </style>
     <div class="col-sm-6 pull-right">
         <span class="btn btn-sm btn-primary pull-right" onclick="javascript:window.location.href = 'info'">
             添加
@@ -12,7 +17,6 @@
     </div><!-- /.page-header -->
 
     <div class="row">
-    
         <div class="col-xs-12">
             <!-- PAGE CONTENT BEGINS -->
             <div class="row">
@@ -36,7 +40,7 @@
                         <form action="" method="post" name="myform">
 
                             {volist name="lists" id="vo"}
-                            <tr>
+                            <tr class="{$vo['c']}">
                                 <td><input type="text" name="listorder[{$vo.id}]" value="{$vo.listorder}" width="10"></td>
                                 <td>{$vo.id}</td>
 
@@ -44,7 +48,7 @@
                                 <span class="fa {$vo.icon}"></span> 
                                 <b>{$vo.name}</b>{else/}├─{$vo.name}{/eq}
                                 </td>
-                                <td>{$vo['c']}/{$vo['a']}</td>
+                                <td class="url">{$vo['c']}/{$vo['a']}</td>
                                 <td class="hidden-480">
                                     <span class="label label-sm label-warning">{$vo.data}</span>
                                 </td>
@@ -85,6 +89,52 @@
         </div><!-- /.col -->
     </div><!-- /.row -->
 </div><!-- /.page-content -->
+<script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
+<script type="text/javascript">
+function isContains(str, substr) {
+ return new RegExp(substr).test(str);
+}
 
+$(function(){
+	var len=$('.url').length;
+	var arr=[];
+	for(i=0;i<len;i++){
+		arr[i]=$('.url').eq(i).text();
+	    var clssname=arr[i].split('/');	
+		if(arr[i]=='/'){
+			arr[i]=arr[i]/arr[i];
+		}else{					
+			if(isContains(arr[i], "index")){
+				$('.url').eq(i).html(arr[i]+'<p style="float:right;cursor: pointer;" class="'+clssname[0]+'"><i class="ace-icon fa fa-angle-double-up"></i></p>');		 
+			}
+			$('.'+clssname[0]+':gt(1)').hide();
+			$('.'+clssname[0]).find('p').html('<i class="ace-icon fa fa-angle-double-up"></i>');
+		}		
+	}
+
+	$('.url').click(function(){
+		var hasid=$(this).find('p').attr('id');
+		var name=$(this).find('p').attr('class');
+		name='.'+name;
+		if(String(hasid)!='undefined'){
+			$(name+':gt(1)').hide();
+			$(this).find('p').attr('id','undefined');
+			$(this).find('p').html('<i class="ace-icon fa fa-angle-double-up"></i>');
+		}else{
+			$(name+':gt(1)').show();
+			
+			$(this).find('p').attr('id','wsjid');
+			$(this).find('p').html('<i class="ace-icon fa fa-angle-double-down"></i>');
+		}
+	
+		
+		
+	});
+	
+
+	
+});
+
+</script>
 
 
