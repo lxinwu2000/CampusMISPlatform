@@ -49,7 +49,7 @@ class PositionsController extends CommonController{
         $data['createuser']=session('user_id');
         $res=db('positions')->insert($data);
         if($result){
-            $data['msg']='姓名已存在！';
+            $data['msg']='名称存在！';
             $data['state']=0;
             return json($data);
         }else {
