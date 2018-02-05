@@ -76,16 +76,9 @@ class PositionsController extends CommonController{
         $request=Request::instance();
         $data=json_decode($request->post('data'),true);
         $rid=input('post.id');
-        $where['cnname']=$data['cnname'];
-        $result=db('positions')->where($where)->find();
         $data['createtime']=date('Y-m-d H:i:s');
         $data['createuser']=session('user_id');
-        $res=db('positions')->where('rid',$rid)->update($data);
-        if($result){
-            $data['msg']='姓名已存在！';
-            $data['state']=0;
-            return json($data);
-        }else {
+        $res=db('positions')->where('rid',$rid)->update($data);      
             if ($res){
                 $data['msg']='更新成功';
                 $data['state']=1;
@@ -95,7 +88,15 @@ class PositionsController extends CommonController{
                 $data['state']=0;
                 return json($data);
             }
-        }
+        
+    }
+    
+    public function lookinfo(){
+        $rid=input('get.rid');
+        $res=db('positions')->where('rid',$rid)->find();
+        $this->assign('info',$res);
+        return $this->fetch('intro');      
+        
     }
     
     public function delete(){
