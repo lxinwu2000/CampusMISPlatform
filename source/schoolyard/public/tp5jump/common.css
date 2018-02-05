@@ -11,10 +11,18 @@ img{
 	display:block !important;
 	max-width:100% !important;
 }
-
+#search{
+	height:40px!important;
+}
 .layui-elips{
 	width:100px!important;
 }
 .zzqy input{
 	border:none;
+}
+.teachersimg{
+	display:none;
+}
+#educationlevel{
+	background:white!important;
 }
