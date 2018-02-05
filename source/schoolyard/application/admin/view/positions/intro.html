@@ -9,7 +9,13 @@
 <link rel="stylesheet" href="{:config('public.tp5jump')}/common.css" />
 </head>
 <body>
-{$info.cnname}
+<fieldset class="layui-elem-field">
+  <legend>{$info.cnname} - 简介</legend>
+  <div class="layui-field-box">
+   {$info.introduce}
+  </div>
+</fieldset>
+
  <script src="{:config('public.tp5jump')}/layui/layui.js"></script>
 </body>
 </html>
