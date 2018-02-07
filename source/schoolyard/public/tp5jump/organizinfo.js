@@ -4,7 +4,7 @@ layui.use(['form','upload'], function(){
 	      ,upload=layui.upload;
 	  var uploadInst = upload.render({
 		    elem: '#logo' 
-		    ,url: Root+'admin/Organizeinfo/logo' 
+		    ,url: Root+'admin/Organizeinfo/edit' 
 		    ,accept: 'images'
 		    ,size:1024
 		    ,before: function(obj){ 
@@ -12,7 +12,6 @@ layui.use(['form','upload'], function(){
 		      }
 		    ,done: function(ret){
 	    	 if(ret.code==0){ 		
-//	    		 $('#logopath').html('<input type="text"  name="logopath" value="' + ret.logopath + '"  autocomplete="off" class="layui-input">');
                  $('#showImg').html('<img src="' + ret.src + '" width="80">');          
                   layer.msg(ret.msg, {icon: 6}); 
                   layer.closeAll('loading'); 
@@ -36,20 +35,3 @@ layui.use(['form','upload'], function(){
 
 
 
-
-//$.ajax({
-//url: Root+'admin/Organizeinfo/edit',
-//type: "post",
-//data:{"data":JSON.stringify(data.field),"id":id},
-//dataType: "json",			
-//success: function(data){
-//if(data.state==1){		
-//layer.msg(data.msg, {icon: 6});		   		 				    		  
-//}else{
-//layer.msg(data.msg, {icon: 5});
-//}
-//},
-//error:function(){
-//	layer.msg('服务异常！');
-//}			
-//});

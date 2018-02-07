@@ -41,7 +41,7 @@ layui.use('table', function(){
 	    var rid =obj.data.rid;
 	    //删除
 	   if(obj.event === 'del'){
-	      layer.confirm('真的删除行么', function(index){	    		    	
+	      layer.confirm('真的删除这条数据么', function(index){	    		    	
 	    	 Ajaxalls(rid,null,2,'admin/Teachers/delete');
 	    	 obj.del();
 	      });
@@ -53,7 +53,7 @@ layui.use('table', function(){
 	    }else if(obj.event ==='lookimg'){
 	    	 $.ajax({
 		 			url : Root+"admin/Teachers/json",
-		 			type : "post",
+		 			type : "get",
 		 			data:{"rid":rid},
 		 			dataType: "json",
 		 			success: function(data){
@@ -102,7 +102,7 @@ layui.use('table', function(){
         		 //ajax从数据库删除
         		 layer.confirm('真的删除这些数据吗', function(index){       		    	
         		    	 $.ajax({
-        		 			url : Root+"admin/Teachers/pldelete",
+        		 			url : Root+"admin/Teachers/delete",
         		 			type : "post",
         		 			data:{"checkedid":checkedid},
         		 			dataType: "json",

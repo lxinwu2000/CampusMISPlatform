@@ -13,7 +13,7 @@ layui.use(['form','laydate','upload'], function(){
 		  });
 	    var uploadInst = upload.render({
 		    elem: '#photopath' 
-		    ,url: Root+'admin/Teachers/photopath' 
+		    ,url: Root+'admin/Teachers/add' 
 		    ,accept: 'images'
 		    ,size:512
 		    ,before: function(obj){ 
@@ -32,16 +32,23 @@ layui.use(['form','laydate','upload'], function(){
 		    layer.closeAll('loading'); 
 		    }
 		  });	    
-	    
-	    	    	       	     
-	  form.on('submit(teachers)', function(data){			 
+	    	    	    	       	     
+	  form.on('submit(teachers)', function(data){
+		  var haspath=$('input[name="photopath"]').val();		  
 		  var rid=$('#teachersrid').val()
-		      ,data=JSON.stringify(data.field);						
-		  if(rid==''){
-			  Ajaxalls(null,data,n,'admin/Teachers/add','admin/Teachers/index');
+		      ,data=JSON.stringify(data.field);	
+        if(haspath==''){
+			layer.msg('图片必须上传',{icon:5});  
 		  }else{
-			  Ajaxalls(rid,data,1,'admin/Teachers/update','admin/Teachers/index');
-		  }	  	    
+			  if(rid==''){
+				  Ajaxalls(null,data,n,'admin/Teachers/add','admin/Teachers/index');
+			  }else{
+				  Ajaxalls(rid,data,1,'admin/Teachers/edit','admin/Teachers/index');
+			  }	  	    
+		  }
+		 
 	    return false;
 	  });
 });
+
+

@@ -15,7 +15,7 @@ layui.use(['form','layedit'], function(){
 		  if(rid==''){
 			  Ajaxalls(null,data,n,'admin/Positions/add','admin/Positions/index');
 		  }else{
-			  Ajaxalls(rid,data,1,'admin/Positions/update','admin/Positions/index');
+			  Ajaxalls(rid,data,1,'admin/Positions/edit','admin/Positions/index');
 		  }	  	    
 	    return false;
 	  });

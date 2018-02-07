@@ -2,130 +2,82 @@
 namespace app\admin\controller;
 
 
-use think\Request;
-
 class PositionsController extends CommonController{
-    public function index(){ 
-       $this->assign('countid',db('positions')->where('status',0)->count());
+    public function index(){       
        return  $this->fetch();
     }
-    public function json(){
-        $limit=input('get.limit');
-        $page=input('get.page');
-        $pages=($page-1)*$limit;
-        $search='%'.input('get.search').'%';
-        $where['cnname|enname']=array('like',$search);       
-        $list=db('positions')->limit($pages,$limit)->where($where)->where('status',0)->select();
-        $res=array();       
-        $res['data']=$list;
-        $res['code']=0;
-        return json($res);
+    public function json(){ 
+        $pos=model('Positions');
+        $res=$pos->lookintro();
+        if($res){
+            $data['state']=1;
+            $data['cnname']=$res['cnname'];
+            $data['introduce']=$res['introduce'];
+            return json($data);
+            
+        }else {
+            $limit=input('limit');
+            $page=input('page');
+            $search='%'.input('key').'%';
+            $where['cnname|enname']=array('like',$search);
+            $pages=($page-1)*$limit;
+            $data=db('positions')->where($where)->where('status',0)->limit($pages,$limit)->select();
+            $res=array();
+            $res['data']=$data;
+            $res['code']=0;
+            $res['count']=db('positions')->where('status',0)->where($where)->count('rid');
+            return json($res);
+        }
+          
     }
 
-    public function deleteall(){
-        $rid=input('post.data/a');
-        $where['rid']=array('in',$rid);
-        $data['status']=1;
-        $res=db('positions')->where($where)->update($data);
-        if ($res){
-            $data['msg']='批量删除成功';
+    public function add(){
+     $addm=model('Positions');
+     if (request()->isPost()){  
+         if($addm->getinfo()){
+             $data['msg']='添加成功';
+             $data['state']=1;
+             return json($data);
+         }else {
+             $data['msg']='名称已经存在';
+             $data['state']=0;
+             return json($data);        
+         }
+     }else {
+            return  $this->fetch('info');
+        }
+    
+                   
+  }
+    public function edit(){       
+        $editm=model('positions');
+        $id=input('post.id');
+        if ($editm->editinfo($id)){
+            $data['msg']='更新成功';
             $data['state']=1;
             return json($data);
         }else {
-            $data['msg']='批量删除失败';
-            $data['state']=0;
-            return json($data);
-        }
-    }
-    public function info(){      
-        return  $this->fetch();
-    }
-    public function add(){
-        $request=Request::instance();      
-        $data=json_decode($request->post('data'),true);
-        $where['cnname']=$data['cnname'];
-        $result=db('positions')->where($where)->find();
-        $data['createtime']=date('Y-m-d H:i:s');
-        $data['createuser']=session('user_id');
-        $res=db('positions')->insert($data);
-        if($result){
-            $data['msg']='名称存在！';
-            $data['state']=0;
-            return json($data);
-        }else {
-            if ($res){
-                $data['msg']='添加成功';
-                $data['state']=1;
-                return json($data);
-            }else {
-                $data['msg']='添加失败';
-                $data['state']=0;
-                return json($data);
-            }
+            $rid=input('get.rid');
+            $res=db('positions')->where('rid',$rid)->find();
+            $this->assign('editone',$res);
+            return $this->fetch('info');
         }
        
     }
-    public function edit(){
-        $rid=input('get.rid');
-        $res=db('positions')->where('rid',$rid)->find();
-        $this->assign('editone',$res);
-        return $this->fetch('info');
-    }
-    
-    public function update(){
-        $request=Request::instance();
-        $data=json_decode($request->post('data'),true);
-        $rid=input('post.id');
-        $data['createtime']=date('Y-m-d H:i:s');
-        $data['createuser']=session('user_id');
-        $res=db('positions')->where('rid',$rid)->update($data);      
-            if ($res){
-                $data['msg']='更新成功';
-                $data['state']=1;
-                return json($data);
-            }else {
-                $data['msg']='更新失败';
-                $data['state']=0;
-                return json($data);
-            }
-        
-    }
-    
-    public function lookinfo(){
-        $rid=input('get.rid');
-        $res=db('positions')->where('rid',$rid)->find();
-        $this->assign('info',$res);
-        return $this->fetch('intro');      
-        
-    }
+       
     
     public function delete(){
-        $rid=input('post.id');
-        $data['status']=1;
-        $res=db('positions')->where('rid',$rid)->update($data);
-        if ($res){
-            $data['msg']='删除成功';
-            $data['state']=1;
-            return json($data);
-        }else {
-            $data['msg']='删除失败';
-            $data['state']=0;
-            return json($data);
-        }
+        $dm=model('Positions');
+        $result=$dm->del();
+        if ($result==1){
+                $data['state']=1;
+                $data['msg']='删除成功';
+                return json($data);
+            }else if($result==2){
+                 $data['state']=1;
+                 $data['msg']='批量删除成功';
+                return json($data);
+            }        
     }
 }
 
-//     public function hasids(){
-//         $search='%'.input('get.search').'%';
-//         $where['cnname|enname']=array('like',$search);
-//         if($search==''){
-//             $ids=db('positions')->where('status',0)->count();
-//             $res['hasids']=$ids;
-//             return json($res);
-//         }else {
-//             $ids=db('positions')->where($where)->where('status',0)->count();
-//             $res['hasids']=$ids;
-//             return json($res);
-//         }
-
-//     }
