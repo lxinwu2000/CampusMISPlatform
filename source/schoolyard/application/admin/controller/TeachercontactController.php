@@ -3,8 +3,7 @@ namespace app\admin\controller;
 use app\admin\model\Teachercontact;
 
 class TeachercontactController extends CommonController{
-    public function index(){
-        $this->assign('arrs',db('teachers')->where('status',0)->field('rid')->select());       
+    public function index(){      
         return $this->fetch();
     }
     public function json(){
