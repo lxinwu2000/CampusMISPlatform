@@ -98,6 +98,13 @@ function Ajaxalls(id,data,n,path,skip){
 			success: function(data){
 				if(data.state==1){		
 					 layer.msg(data.msg,{icon:6,time:1000});
+					 //异步删除结合layui数据表格
+					 $('td[data-field=rid]').each(function(){
+			    		 if($(this).text()==id){
+			    			  var index_id = $(this).parent('tr').attr('data-index');
+		                      $('tr[data-index=' + index_id + ']').remove();
+			    		 }
+			    	 });
 					 if(!skip){
 							return false;
 						}else{

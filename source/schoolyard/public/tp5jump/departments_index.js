@@ -3,7 +3,7 @@ layui.use('table', function(){
   var table = layui.table;
  
   table.render({    //表格渲染 
-     elem: '#teacherstable'
+     elem: '#positionstable'
     ,url:Root+'admin/Departments/json'
     ,height: 'full-150'   
     ,cellMinWidth: 80 
@@ -17,68 +17,64 @@ layui.use('table', function(){
       
     }    
     ,cols: [[
-	   {type:'numbers',title:'记录号',width:50,fixed: true}
+	   {type:'numbers',title:'记录号',width:80}
 	  ,{type:'checkbox'}
-      ,{field:'rid', width:80, title: 'ID', sort: true,align:'center',unresize: true}
-      ,{field:'number', width:100, title: '教工编号',align:'center'}
-      ,{field:'cnname', width:85, title: '中文名',align:'center'}
-      ,{field:'enname', width:85, title: '英文名',align:'center'}
-      ,{field:'office', width:200, title: '办公室', minWidth: 50,align:'center'}
-      ,{field:'idcard', width:180, title: '身份证',align:'center'}
-      ,{field:'birthday', width:180, title: '生日', sort: true,align:'center'}
-      ,{field:'entrydate', width:180, title: '入职日期',sort: true,align:'center'}
-      ,{field:'educationlevel', width:100, title: '学历',align:'center'}
-      ,{field:'graduateinstitutions', width:180, title: '毕业院校',align:'center'}
-      ,{field:'workingyears', width:80, title: '工龄',sort: true,align:'center'}    
-      ,{field:'right',width:200, title: '操作',toolbar:"#barDemo"}
+      ,{field:'rid', width:80, title: 'ID', sort: true,align:'center',unresize: true}   
+      ,{field:'cnname', width:150, title: '中文名',align:'center'}
+      ,{field:'enname', width:180, title: '英文名',align:'center'} 
+      ,{field:'head', width:80, title: '负责人',align:'center'}
+      ,{field:'parentid', width:180, title: '上级部门',align:'center'}
+      ,{field:'remark', minWidth:50, title: '备注',align:'center'}    
+      ,{field:'right',width:250, title: '操作',toolbar:"#barDemob"}
     ]] 
-    ,id: 'table_a'//重载表格唯一id
+    ,id: 'table_b'//重载表格唯一id
   });
-  table.on('checkbox(Idtable)', function(obj){		 
+  table.on('checkbox(Idtableb)', function(obj){		 
 	 /*  console.log(obj); */
   });
-  table.on('tool(Idtable)', function(obj){
+  table.on('tool(Idtableb)', function(obj){
 	    var rid =obj.data.rid;
 	    //删除
 	   if(obj.event === 'del'){
 	      layer.confirm('真的删除这条数据么', function(index){	    		    	
-	    	 Ajaxalls(rid,null,2,'admin/Teachers/delete');
-	    	 obj.del();
+	    	 Ajaxalls(rid,null,2,'admin/Departments/delete');
+//	    	 obj.del();
+	    	
 	      });
 	    } 
 	 //编辑
 	   else if(obj.event === 'edit'){
 		   window.location.href="edit?rid="+rid;	    	
 	    		    	
-	    }else if(obj.event ==='lookimg'){
-	    	 $.ajax({
-		 			url : Root+"admin/Teachers/json",
-		 			type : "get",
-		 			data:{"rid":rid},
-		 			dataType: "json",
-		 			success: function(data){
-		 				if(data.state==1){
-		 					layer.open({
-		 						  type: 1,
-		 						  title:data.cnname+'的照片',
-		 						  skin: 'layui-layer-demo',
-		 						  closeBtn: 1,
-		 						  shadeClose: true,
-		 						  shade: 0.4,
-		 						  offset: 't',
-		 						  content: '<img src="'+data.src+'" class="simg" width="250">'
-		 						});				  				
-		 				}else{
-		 				layer.msg(data.msg, {icon: 5});
-		 				}
-		 			},
-		 		});	
+	    }else if(obj.event ==='lookintro'){
+    	 $.ajax({
+	 			url : Root+"admin/Departments/json",
+	 			type : "get",
+	 			data:{"rid":rid},
+	 			dataType: "json",
+	 			success: function(data){
+	 				if(data.state==1){
+	 					layer.open({
+	 						  type: 1,
+	 						  title:data.cnname+'的简介',
+	 						  skin: 'layui-layer-demo',
+	 						  closeBtn: 1,
+	 						  shadeClose: true,
+	 						  shade: 0.4,
+	 						  area: ['700px', '450px'], 						 
+	 						  content: '<div style="margin:15px;">'+data.introduce+'</div>'
+	 						});				  				
+	 				}else{
+	 				layer.msg(data.msg, {icon: 5});
+	 				}
+	 			},
+	 		});	
 	    }
 	  });
   var $ = layui.$, active = {
 		    reload: function(){
-		      var demoReload = $('#demoReload');
-		      table.reload('table_a', {
+		      var demoReload = $('#demoReloadb');
+		      table.reload('table_b', {
 		        page: {
 		          curr: 1 
 		        }
@@ -90,7 +86,7 @@ layui.use('table', function(){
 		    }
   //批量获取要删除的id
          ,getCheckid:function(){
-        	 var checkStatus = table.checkStatus('table_a')
+        	 var checkStatus = table.checkStatus('table_b')
              ,data = checkStatus.data;
         	 var checkedid=new Array();
         	 for(i=0;i<data.length;i++){
@@ -102,12 +98,13 @@ layui.use('table', function(){
         		 //ajax从数据库删除
         		 layer.confirm('真的删除这些数据吗', function(index){       		    	
         		    	 $.ajax({
-        		 			url : Root+"admin/Teachers/delete",
+        		 			url : Root+"admin/Departments/delete",
         		 			type : "post",
         		 			data:{"checkedid":checkedid},
         		 			dataType: "json",
         		 			success: function(data){
         		 				if(data.state==1){
+        		 					layer.msg(data.msg, {icon: 6});
         		 					//同步删除表格的数据
         		 					 for(i=0;i<checkedid.length;i++){        		 
         		 		        		 $('td[data-field=rid]').each(function(){
@@ -128,9 +125,10 @@ layui.use('table', function(){
            
        }
  };	 
-  $('.demoTable .layui-btn').on('click', function(){
+  $('.demoTableb .layui-btn').on('click', function(){
     var type = $(this).data('type');
     active[type] ? active[type].call(this) : '';
   });
     
 });
+

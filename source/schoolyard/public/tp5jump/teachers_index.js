@@ -23,7 +23,7 @@ layui.use('table', function(){
       ,{field:'number', width:100, title: '教工编号',align:'center'}
       ,{field:'cnname', width:85, title: '中文名',align:'center'}
       ,{field:'enname', width:85, title: '英文名',align:'center'}
-      ,{field:'office', width:200, title: '办公室', minWidth: 50,align:'center'}
+      ,{field:'office', width:200, title: '办公室',align:'center'}
       ,{field:'idcard', width:180, title: '身份证',align:'center'}
       ,{field:'birthday', width:180, title: '生日', sort: true,align:'center'}
       ,{field:'entrydate', width:180, title: '入职日期',sort: true,align:'center'}
@@ -43,7 +43,7 @@ layui.use('table', function(){
 	   if(obj.event === 'del'){
 	      layer.confirm('真的删除这条数据么', function(index){	    		    	
 	    	 Ajaxalls(rid,null,2,'admin/Teachers/delete');
-	    	 obj.del();
+//	    	 obj.del();
 	      });
 	    } 
 	 //编辑
