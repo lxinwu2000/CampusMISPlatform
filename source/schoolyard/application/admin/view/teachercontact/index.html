@@ -2,10 +2,15 @@
 <link rel="stylesheet" href="{:config('public.tp5jump')}/common.css" />
 <div class="page-content">
     <div class="col-sm-6 pull-right">
+     <span class="btn btn-sm btn-primary pull-right">
+            <a href="{:url('Teachers/index')}" style="color:white;text-decoration:none">返回上一页</a>
+            <i class="icon-reply icon-only"></i>
+        </span>
        <span class="btn btn-sm btn-primary pull-right" onclick="javascript:window.location.href = 'add'">
             添加
             <i class="icon-reply icon-only"></i>
         </span>
+               
     </div>
     <div class="page-header">
         <h1>
@@ -16,7 +21,7 @@
     <div class="demoTable">		
 		<div class="layui-inline">
 			<input class="layui-input" name="key" id="demoReload"
-				autocomplete="off" placeholder="请输入编号/名字">
+				autocomplete="off" placeholder="请输入老师/手机号">
 		</div>
 		<button class="layui-btn" data-type="reload">搜索</button>
 		<button class="layui-btn layui-btn-danger" data-type="getCheckid">批量删除</button>
@@ -28,10 +33,9 @@
 	 </a>
 	</div>
    
-    <table class="layui-hide" id="teacherstable" lay-filter="Idtable"></table>	
+    <table class="layui-hide" id="teachercontacttable" lay-filter="Idtable"></table>	
 	<script type="text/html" id="barDemo">
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
-    <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="lookimg">查看图片</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
   </script>
    
@@ -40,6 +44,6 @@
  <script src="{:config('public.tp5jump')}/layui/layui.js"></script>
  <script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
   <script src="{:config('public.tp5jump')}/common.js"></script> 
- <script src="{:config('public.tp5jump')}/teachers_index.js"></script> 
+ <script src="{:config('public.tp5jump')}/teachercontact_index.js"></script> 
 
 

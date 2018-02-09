@@ -13,7 +13,21 @@
         </h1>
     </div><!-- /.page-header -->
     <div class="row">
-   
+    <div class="demoTableb">		
+		<div class="layui-inline">
+			<input class="layui-input" name="key" id="demoReloadb"
+				autocomplete="off" placeholder="请输入名称">
+		</div>
+		<button class="layui-btn" data-type="reload">搜索</button>
+		<button class="layui-btn layui-btn-danger" data-type="getCheckid">批量删除</button>
+	</div>
+    
+    <table class="layui-hide" id="positionstable" lay-filter="Idtableb"></table>	
+	<script type="text/html" id="barDemob">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="lookintro">查看简介</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+  </script>
    
     </div><!-- /.row -->
 </div><!-- /.page-content -->

@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="{:config('public.tp5jump')}/layui/css/layui.css" />
+<link rel="stylesheet" href="{:config('public.tp5jump')}/common.css" />
+<div class="page-content">
+    <div class="col-sm-6 pull-right">
+      <span class="btn btn-sm btn-primary pull-right" onclick="javascript:window.history.back();">
+            返回上一页
+            <i class="icon-reply icon-only"></i>
+        </span>
+    </div>
+    <div class="page-header">
+        <h1>
+            {:model('menu')->getParentNname()}              
+            <small>
+                <i class="ace-icon fa fa-angle-double-right"></i>
+                {:input('rid')?'编辑':'新增'}
+            </small>
+        </h1>
+    </div><!-- /.page-header -->
+    <div class="row">
+        <input type="hidden" id="teachercontrid" value="{$editone.rid}"/>
+     <form class="layui-form layui-form-labelsave" action="">
+     
+     
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">	  
+		 <div class="layui-form-item">
+		      <label class="layui-form-label">老师</label>
+				    <div class="layui-input-block">
+				      <select name="teacherid"  lay-verify="required">
+				        <option value="">请选择老师</option>	
+				        {foreach name="teacherslist" item="vo"}			        
+				        <option value="{$vo.cnname}"{eq name="vo.cnname" value="$editone.teacherid"}selected{/eq}>{$vo.cnname}</option>
+				        {/foreach}
+				      </select>
+				    </div>
+		  </div>
+		  
+    </div>	
+                                
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">手机号</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="phone" value="{$editone.phone}" lay-verify="phone" placeholder="请输入手机" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+     </div>	
+    
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">邮箱</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="email" value="{$editone.email}"  lay-verify="email" placeholder="请输入邮箱" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">qq</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="qq" value="{$editone.qq}"  lay-verify="required" placeholder="请输入qq" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">微信</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="wechat" value="{$editone.wechat}"  lay-verify="required" placeholder="请输入微信" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">支付宝账号</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="alipay" value="{$editone.alipay}"  lay-verify="required" placeholder="请输入支付宝" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		 <div class="layui-form-item">                    
+    <label class="layui-form-label">地址:</label>		    
+     <div class="layui-input-block">
+	    <textarea name="address" placeholder="请输入地址" class="layui-textarea">{$editone.address}</textarea>
+	  </div>			    
+  </div>
+    </div>	
+         
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		<div class="layui-form-item">                    
+    <label class="layui-form-label">备注:</label>		    
+     <div class="layui-input-block">
+	    <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$editone.remark}</textarea>
+	  </div>			    
+  </div>
+    </div>	      
+     
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="teachercontact">{:input('rid')?'编辑':'新增'}教师联系方式</button>     
+    </div>
+  </div>
+</form>   
+        
+    </div><!-- /.row -->
+</div><!-- /.page-content -->
+<script src="{:config('public.tp5jump')}/layui/layui.js"></script>
+<script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
+<script src="{:config('public.tp5jump')}/common.js"></script> 
+<script src="{:config('public.tp5jump')}/teachercontact_add.js"></script>
+
