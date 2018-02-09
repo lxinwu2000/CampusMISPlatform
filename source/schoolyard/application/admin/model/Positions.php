@@ -7,7 +7,7 @@ class Positions extends Model{
     //查看简介
     public function lookintro(){
         $rid=input('get.rid');
-        $res=$this->where('rid',$rid)->find();
+        $res=$this->where('rid',$rid)->field('cnname,introduce')->find();
         if ($res){
             return $res;
         }else {
