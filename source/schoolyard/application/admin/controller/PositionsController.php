@@ -50,7 +50,7 @@ class PositionsController extends CommonController{
                    
   }
     public function edit(){       
-        $editm=model('positions');
+        $editm=model('Positions');
         $id=input('post.id');
         if ($editm->editinfo($id)){
             $data['msg']='更新成功';
