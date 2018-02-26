@@ -44,7 +44,7 @@
 		      <select name="head"  lay-verify="required">
 		        <option value="">请选择</option>
 		        {volist name="terlist" id="vo"}
-		        <option value="{$vo.cnname}" {eq name="vo.cnname" value="$departedit.head"}selected{/eq}>{$vo.cnname}</option>
+		        <option value="{$vo.rid}" {eq name="vo.rid" value="$departedit.head"}selected{/eq}>{$vo.cnname}</option>
 		        {/volist}
 		      </select>
 		    </div>
@@ -56,9 +56,9 @@
 		    <label class="layui-form-label">上级部门</label>
 		    <div class="layui-input-block">
 		      <select name="parentid" id="parentid" lay-verify="required">
-		        <option value="顶级部门">顶级部门</option>
+		        <option value="0">顶级部门</option>
 		        {volist name="parentslist" id="vo"}
-		        <option value="{$vo.cnname}"{eq name="vo.cnname" value="$departedit.cnname"}selected{/eq}>{$vo.cnname}</option>
+		        <option value="{$vo.rid}"{eq name="vo.rid" value="$departedit.rid"}selected{/eq}>{$vo.cnname}</option>
 		        {/volist}
 		      </select>
 		    </div>

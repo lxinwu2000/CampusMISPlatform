@@ -2,8 +2,11 @@
 namespace app\admin\controller;
 use app\admin\controller\CommonController;
 use app\admin\model\Departments;
+
+use  think\Db;
+
 class DepartmentsController extends CommonController{
-    public function index(){       
+    public function index(){         
        return  $this->fetch();       
     }
     public function json(){
@@ -15,19 +18,36 @@ class DepartmentsController extends CommonController{
             $data['introduce']=$res['introduce'];
             return json($data);
         }else {
-            $limit=input('limit');
-            $page=input('page');
-            $search='%'.input('key').'%';
-            $where['cnname|enname']=array('like',$search);
-            $pages=($page-1)*$limit;
-            $data=db('departments')->where($where)->where('status',0)->limit($pages,$limit)->select();
+            $limit=input('get.limit');
+            $page=input('get.page');
+            $search='%'.input('key').'%'; 
+            $where['cnname']=array('like',$search);
+            $pages=($page-1)*$limit;             
+            $limts="limit $pages,$limit";   
+            
+            $sql="SELECT ZD.`rid`,ZD.`cnname`,ZD.`enname`,ZD.`remark`,ZT.`cnname` AS teachername,
+                CASE ZD.`parentid` WHEN 0 THEN '顶级部门' ELSE 
+                (SELECT TMP_ZD.cnname FROM zxcms_departments TMP_ZD WHERE TMP_ZD.`rid` = ZD.`parentid`) END AS pname
+                FROM zxcms_departments ZD LEFT JOIN zxcms_teachers ZT ON ZT.`rid` = ZD.`head`  
+                WHERE ZT.status=0 AND ZD.status=0"; 
+            
+            $count="SELECT count('rid'),
+                CASE ZD.`parentid` WHEN 0 THEN '顶级部门' ELSE 
+                (SELECT TMP_ZD.cnname FROM zxcms_departments TMP_ZD WHERE TMP_ZD.`rid` = ZD.`parentid`) END AS pname
+                FROM zxcms_departments ZD LEFT JOIN zxcms_teachers ZT ON ZT.`rid` = ZD.`head`  
+                WHERE ZT.status=0 AND ZD.status=0";           
+              if(!empty($search)){                
+                 $sql=$sql.' '."AND (ZD.`cnname` LIKE '%$search%' OR ZT.`cnname` LIKE '%$search%')";         
+                 $count=$count.' '."AND (ZD.`cnname` LIKE '%$search%' OR ZT.`cnname` LIKE '%$search%')";         
+              }
+              $count=Db::query($count);                   
+            $data=Db::query($sql.' '.$limts);          
             $res=array();
             $res['data']=$data;
             $res['code']=0;
-            $res['count']=db('departments')->where('status',0)->where($where)->count('rid');
+            $res['count']=$count[0]["count('rid')"];
             return json($res);
-        }
-       
+        }      
     }
     
 public function delete(){

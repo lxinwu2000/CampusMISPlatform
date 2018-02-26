@@ -20,12 +20,12 @@ layui.use('table', function(){
 	   {type:'numbers',title:'记录号',width:80}
 	  ,{type:'checkbox'}
       ,{field:'rid', width:80, title: 'ID', sort: true,align:'center',unresize: true}   
-      ,{field:'cnname', width:150, title: '中文名',align:'center'}
-      ,{field:'enname', width:180, title: '英文名',align:'center'} 
-      ,{field:'head', width:80, title: '负责人',align:'center'}
-      ,{field:'parentid', width:180, title: '上级部门',align:'center'}
-      ,{field:'remark', minWidth:50, title: '备注',align:'center'}    
-      ,{field:'right',width:250, title: '操作',toolbar:"#barDemob"}
+      ,{field:'cnname', width:100, title: '中文名',align:'center'}
+      ,{field:'enname', width:100, title: '英文名',align:'center'} 
+      ,{field:'pname', width:140, title: '上级部门',align:'center'}
+      ,{field:'teachername', width:80, title: '负责人',align:'center'}   
+      ,{field:'remark', minWidth:100, title: '备注',align:'center'}    
+      ,{field:'right',width:220, title: '操作',toolbar:"#barDemob"}
     ]] 
     ,id: 'table_b'//重载表格唯一id
   });

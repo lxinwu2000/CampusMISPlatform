@@ -20,7 +20,7 @@ layui.use('table', function(){
 	   {type:'numbers',title:'记录号',width:50,fixed: true}
 	  ,{type:'checkbox'}
       ,{field:'rid', width:80, title: 'ID', sort: true,align:'center',unresize: true}
-      ,{field:'teacherid', width:100, title: '教师',align:'center'}
+      ,{field:'teachername', width:100, title: '教师',align:'center'}
       ,{field:'phone', width:85, title: '手机',align:'center'}
       ,{field:'email', width:85, title: '邮箱',align:'center'}
       ,{field:'qq', width:85, title: 'qq',align:'center'}

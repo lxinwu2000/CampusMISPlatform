@@ -28,7 +28,7 @@
 				      <select name="teacherid"  lay-verify="required">
 				        <option value="">请选择老师</option>	
 				        {foreach name="teacherslist" item="vo"}			        
-				        <option value="{$vo.cnname}"{eq name="vo.cnname" value="$editone.teacherid"}selected{/eq}>{$vo.cnname}</option>
+				        <option value="{$vo.rid}"{eq name="vo.rid" value="$editone.teacherid"}selected{/eq}>{$vo.cnname}</option>
 				        {/foreach}
 				      </select>
 				    </div>

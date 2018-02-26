@@ -1,7 +1,7 @@
 <?php
 namespace app\admin\controller;
 use app\admin\model\Teachercontact;
-
+use think\Db;
 class TeachercontactController extends CommonController{
     public function index(){      
         return $this->fetch();
@@ -10,13 +10,20 @@ class TeachercontactController extends CommonController{
         $limit=input('limit');
         $page=input('page');
         $search='%'.input('key').'%';
-        $where['phone|teacherid']=array('like',$search);
-        $pages=($page-1)*$limit;
-        $data=db('teachercontact')->where($where)->where('status',0)->limit($pages,$limit)->select();
+        $pages=($page-1)*$limit;      
+       
+        if (!empty($search)){
+        $sql=$sql.' '."AND (ZD.`phone` LIKE '%$search%' OR ZT.`cnname` LIKE '%$search%');";
+        }else {
+        $ql="SELECT ZD.*, ZT.cnname AS teachername
+        FROM zxcms_teachercontact AS ZD, zxcms_teachers AS ZT
+        WHERE ZT.rid= ZD.teacherid AND ZT.status=0 AND ZD.status=0;";
+        }
+        $data=Db::query($ql);       
         $res=array();
         $res['data']=$data;
         $res['code']=0;
-        $res['count']=db('teachercontact')->where('status',0)->where($where)->count('rid');
+        $res['count']=db('teachercontact')->where('status',0)->count('rid');
         return json($res);
     }
     public function add(){
@@ -33,7 +40,7 @@ class TeachercontactController extends CommonController{
             }
         }else {
             $te=model('Teachers');
-            $this->assign('teacherslist',$te->field('cnname')->select());            
+            $this->assign('teacherslist',$te->field('rid,cnname')->select());            
             return $this->fetch('info');
         }
     }
@@ -53,7 +60,7 @@ class TeachercontactController extends CommonController{
         }else {
             $rid=input('get.rid');
             $te=model('Teachers');
-            $this->assign('teacherslist',$te->field('cnname')->select());
+            $this->assign('teacherslist',$te->field('rid,cnname')->select());
             $res=db('teachercontact')->where('rid',$rid)->find();
             $this->assign('editone',$res);
             return $this->fetch('info');
