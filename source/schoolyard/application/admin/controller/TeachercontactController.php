@@ -10,20 +10,25 @@ class TeachercontactController extends CommonController{
         $limit=input('limit');
         $page=input('page');
         $search='%'.input('key').'%';
-        $pages=($page-1)*$limit;      
-       
-        if (!empty($search)){
-        $sql=$sql.' '."AND (ZD.`phone` LIKE '%$search%' OR ZT.`cnname` LIKE '%$search%');";
-        }else {
-        $ql="SELECT ZD.*, ZT.cnname AS teachername
+        $pages=($page-1)*$limit; 
+        $limts="limit $pages,$limit";
+        
+        $sql="SELECT ZD.*, ZT.cnname AS teachername
         FROM zxcms_teachercontact AS ZD, zxcms_teachers AS ZT
-        WHERE ZT.rid= ZD.teacherid AND ZT.status=0 AND ZD.status=0;";
+        WHERE ZT.rid= ZD.teacherid AND ZT.status=0 AND ZD.status=0";
+        
+        $count="SELECT count('rid') FROM zxcms_teachercontact AS ZD, zxcms_teachers AS ZT
+        WHERE ZT.rid= ZD.teacherid AND ZT.status=0 AND ZD.status=0";
+        if (!empty($search)){
+        $sql=$sql.' '."AND (ZD.`phone` LIKE '%$search%' OR ZT.`cnname` LIKE '%$search%')";
+        $count=$count.' '."AND (ZD.`phone` LIKE '%$search%' OR ZT.`cnname` LIKE '%$search%')";
         }
-        $data=Db::query($ql);       
+        $data=Db::query($sql.' '.$limts);  
+        $count=Db::query($count);
         $res=array();
         $res['data']=$data;
         $res['code']=0;
-        $res['count']=db('teachercontact')->where('status',0)->count('rid');
+        $res['count']=$count[0]["count('rid')"];
         return json($res);
     }
     public function add(){

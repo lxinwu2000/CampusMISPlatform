@@ -31,16 +31,14 @@ class DepartmentsController extends CommonController{
                 FROM zxcms_departments ZD LEFT JOIN zxcms_teachers ZT ON ZT.`rid` = ZD.`head`  
                 WHERE ZT.status=0 AND ZD.status=0"; 
             
-            $count="SELECT count('rid'),
-                CASE ZD.`parentid` WHEN 0 THEN '顶级部门' ELSE 
-                (SELECT TMP_ZD.cnname FROM zxcms_departments TMP_ZD WHERE TMP_ZD.`rid` = ZD.`parentid`) END AS pname
+            $count="SELECT count('rid')
                 FROM zxcms_departments ZD LEFT JOIN zxcms_teachers ZT ON ZT.`rid` = ZD.`head`  
                 WHERE ZT.status=0 AND ZD.status=0";           
               if(!empty($search)){                
                  $sql=$sql.' '."AND (ZD.`cnname` LIKE '%$search%' OR ZT.`cnname` LIKE '%$search%')";         
                  $count=$count.' '."AND (ZD.`cnname` LIKE '%$search%' OR ZT.`cnname` LIKE '%$search%')";         
               }
-              $count=Db::query($count);                   
+            $count=Db::query($count);                   
             $data=Db::query($sql.' '.$limts);          
             $res=array();
             $res['data']=$data;
