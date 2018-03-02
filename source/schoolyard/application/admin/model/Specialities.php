@@ -3,11 +3,7 @@ namespace app\admin\model;
 use think\Model;
 use think\Request;
 
-class Grades extends Model{
-	public function Teacher(){
-		return $this->belongsTo('Teachers','head','rid');
-	}
-
+class Specialities extends Model{
 	public function getinfo(){
 		$resquest=Request::instance();
         $data=json_decode($resquest->post('data'),true);
@@ -26,7 +22,7 @@ class Grades extends Model{
 			}
 		}else{
 			return $this->allowField(true)->save($data);
-		}    
+		}
 	}
 
 	public function editinfo($rid){
@@ -41,11 +37,7 @@ class Grades extends Model{
         }
 	}
 
-	public function getTeachers(){
-		return Teachers::field("rid,cnname")->select();
-	}
-
-    //     删除
+    //删除
     public function del(){
         $rid=input('post.id');
         if (!empty($rid)){

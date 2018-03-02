@@ -3,9 +3,9 @@ namespace app\admin\controller;
 
 use think\Request;
 use think\Db;
-use app\admin\model\Grades;
+use app\admin\model\Specialities;
 
-class GradesController extends CommonController{
+class SpecialitiesController extends CommonController{
     public function index(){
         return $this->fetch();
     }
@@ -18,20 +18,18 @@ class GradesController extends CommonController{
             $search='%'.input('key').'%';
             $where['cnname|enname']=array('like',$search);
             $pages=($page-1)*$limit;
-            $data=Grades::where($where)->where('status',0)->limit($pages,$limit)->select();
-			foreach($data as $item){
-				$item['teachername']=$item->teacher['cnname'];
-			}
+            $data=Specialities::where($where)->where('status',0)->limit($pages,$limit)->select();
+
             $res=array();
             $res['data']=$data;
             $res['code']=0;
-            $res['count']=Grades::where('status',0)->where($where)->count('rid');
+            $res['count']=Specialities::where('status',0)->where($where)->count('rid');
             return json($res);
         }
     }
     
     public function delete(){
-        $m=model('grades');
+        $m=model('specialities');
         $result=$m->del();
         if ($result==1){
             $data['state']=1;
@@ -45,10 +43,10 @@ class GradesController extends CommonController{
     }
         
     public function edit(){
-		$grade=new Grades();
+		$db=new Specialities();
 		if(request()->isPost()){
 			$rid=input("post.id");
-			$res=$grade->editinfo($rid);
+			$res=$db->editinfo($rid);
 			if($res){
 				$data['state']=1;
                 $data['msg']='修改成功';
@@ -57,22 +55,18 @@ class GradesController extends CommonController{
 		}else{
 			$rid=input("get.rid");
 			
-			$data=Grades::where("rid",$rid)->find();
-			$this->assign("gradesedit",$data);
-
-			$teacherslist=$grade->getTeachers();
-			$this->assign("teacherslist",$teacherslist);
+			$data=Specialities::where("rid",$rid)->find();
+			$this->assign("data",$data);
 			
 			return $this->fetch("info");
 		}
     }
     
     public function add(){
-		$grade=new Grades();
+		$db=new Specialities();
 		if(request()->isPost()){
-			$res=$grade->getinfo();
+			$res=$db->getinfo();
 			if($res){
-			
 				$data['state']=1;
                 $data['msg']='添加成功';
                 return json($data);
@@ -82,8 +76,6 @@ class GradesController extends CommonController{
                 return json($data);
 			}
 		}else{
-			$teacherslist=$grade->getTeachers();
-			$this->assign("teacherslist",$teacherslist);
 			return $this->fetch('info');		
 		} 
  }
