@@ -12,10 +12,8 @@ class Grades extends Model{
 		$resquest=Request::instance();
         $data=json_decode($resquest->post('data'),true);
         $data['createtime']=date('Y-m-d H:i:s');
-        $data['createuser']=session('user_id');
-        
-        
-           return $this->allowField(true)->save($data);         
+        $data['createuser']=session('user_id');        
+        return $this->allowField(true)->save($data);         
         
 	}
 
