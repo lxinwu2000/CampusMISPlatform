@@ -20,12 +20,12 @@
 		</div>
 		<button class="layui-btn" data-type="reload">搜索</button>
 		<button class="layui-btn layui-btn-danger" data-type="getCheckid">批量删除</button>
-	<a href="{:url('Teachercontact/index')}">
-	    <button class="layui-btn  layui-btn-normal" >管理教师联系方式</button>
-	</a> 
-	<a href="">   
-	    <button class="layui-btn  layui-btn-warm" >管理教师简历</button>
-	 </a>
+		<a href="{:url('Teachercontact/index')}">
+		    <button class="layui-btn  layui-btn-normal" >管理教师联系方式</button>
+		</a> 
+		<a href="{:url('Teacherintroduce/index')}">   
+		    <button class="layui-btn  layui-btn-warm" >管理教师简历</button>
+		 </a>
 	</div>
    
     <table class="layui-hide" id="teacherstable" lay-filter="Idtable"></table>	
@@ -33,8 +33,7 @@
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="lookimg">查看图片</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
-  </script>
-   
+   </script>  
     </div><!-- /.row -->
 </div><!-- /.page-content -->
  <script src="{:config('public.tp5jump')}/layui/layui.js"></script>

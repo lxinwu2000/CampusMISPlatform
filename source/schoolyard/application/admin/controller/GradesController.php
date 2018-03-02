@@ -16,16 +16,15 @@ class GradesController extends CommonController{
             $limit=input('limit');
             $page=input('page');
             $search='%'.input('key').'%';
-            $where['cnname|enname']=array('like',$search);
             $pages=($page-1)*$limit;
-            $data=Grades::where($where)->where('status',0)->limit($pages,$limit)->select();
+            $data=Grades::where('status',0)->limit($pages,$limit)->select();
 			foreach($data as $item){
 				$item['teachername']=$item->teacher['cnname'];
 			}
             $res=array();
             $res['data']=$data;
             $res['code']=0;
-            $res['count']=Grades::where('status',0)->where($where)->count('rid');
+            $res['count']=Grades::where('status',0)->count('rid');
             return json($res);
         }
     }
