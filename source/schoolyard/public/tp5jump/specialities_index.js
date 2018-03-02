@@ -22,9 +22,9 @@ layui.use('table', function(){
       ,{field:'rid', width:80, title: 'ID', sort: true,align:'center',unresize: true}   
       ,{field:'cnname', width:100, title: '中文名',align:'center'}
       ,{field:'enname', width:100, title: '英文名',align:'center'} 
-      ,{field:'introduce', width:80, title: '简介',align:'center'}   
-      ,{field:'remark', minWidth:100, title: '备注',align:'center'}    
-      ,{field:'right',width:220, title: '操作',toolbar:"#barDemob"}
+      ,{field:'introduce', width:180, title: '简介',align:'center'}   
+      ,{field:'remark', minWidth:80, title: '备注',align:'center'}    
+      ,{field:'right',width:190, title: '操作',toolbar:"#barDemob"}
     ]] 
     ,id: 'table_b'//重载表格唯一id
   });
@@ -49,7 +49,7 @@ layui.use('table', function(){
 	  });
   var $ = layui.$, active = {
 		    reload: function(){
-		      var demoReload = $('#demoReloadb');
+		      var demoReload = $('#demoReload');
 		      table.reload('table_b', {
 		        page: {
 		          curr: 1 

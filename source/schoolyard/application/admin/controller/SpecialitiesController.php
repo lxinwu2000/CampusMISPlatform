@@ -19,7 +19,6 @@ class SpecialitiesController extends CommonController{
             $where['cnname|enname']=array('like',$search);
             $pages=($page-1)*$limit;
             $data=Specialities::where($where)->where('status',0)->limit($pages,$limit)->select();
-
             $res=array();
             $res['data']=$data;
             $res['code']=0;
@@ -53,11 +52,9 @@ class SpecialitiesController extends CommonController{
                 return json($data);
 			}
 		}else{
-			$rid=input("get.rid");
-			
+			$rid=input("get.rid");	
 			$data=Specialities::where("rid",$rid)->find();
-			$this->assign("data",$data);
-			
+			$this->assign("data",$data);			
 			return $this->fetch("info");
 		}
     }
