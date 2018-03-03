@@ -32,14 +32,21 @@
 		  </div>
 	</div>
 
-    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
-		  <div class="layui-form-item">
-		    <label class="layui-form-label">中文名称:</label>
-		    <div class="layui-input-block">
-		      <input type="text" name="cnname" value="{$data.cnname}" lay-verify="required" placeholder="请输入中文名称" autocomplete="off" class="layui-input">
-		    </div>
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">	  
+		 <div class="layui-form-item">
+		      <label class="layui-form-label">领导人</label>
+				    <div class="layui-input-block">
+				      <select name="teacherid"  lay-verify="required" >
+				        <option value="">请选择老师</option>	
+				        {foreach name="teacherslist" item="vo"}			        
+				        <option value="{$vo.rid}">{$vo.cnname}</option>
+				        {/foreach}
+				      </select>
+				    </div>
 		  </div>
+		  
     </div>	
+       
     
     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
 		  <div class="layui-form-item">
@@ -75,6 +82,21 @@
 	  </div>
 	</div>
 
+<<<<<<< .mine
+	 <div class="layui-form-item">                    
+	    <label class="layui-form-label">备注:</label>		    
+	     <div class="layui-input-block">
+		    <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$data.remark}</textarea>
+		  </div>			    
+	  </div>	
+||||||| .r88
+		  <div class="layui-form-item">                    
+		    <label class="layui-form-label">备注:</label>		    
+		     <div class="layui-input-block">
+			    <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$data.remark}</textarea>
+			  </div>			    
+		  </div>	
+=======
       <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
 		  <div class="layui-form-item">                    
 		    <label class="layui-form-label">备注:</label>		    
@@ -83,6 +105,7 @@
 			  </div>			    
 		  </div>
     </div>	
+>>>>>>> .r90
      
   <div class="layui-form-item">
     <div class="layui-input-block">
@@ -90,10 +113,16 @@
     </div>
   </div>
 </form>   
-   
+    <select name="teacherid" id="teacherid" onchange="selectname()">
+				        <option value="">请选择老师</option>	
+				        {foreach name="teacherslist" item="vo"}			        
+				        <option value="{$vo.rid}">{$vo.cnname}</option>
+				        {/foreach}
+				      </select>
     </div><!-- /.row -->
 </div><!-- /.page-content -->
  <script src="{:config('public.tp5jump')}/layui/layui.js"></script>
  <script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
   <script src="{:config('public.tp5jump')}/common.js"></script> 
  <script src="{:config('public.tp5jump')}/leaders_add.js"></script> 
+ 
