@@ -18,10 +18,10 @@ layui.use('table', function(){
     ,cols: [[
 	   {type:'numbers',title:'记录号',width:80}
 	  ,{type:'checkbox'}
-      ,{field:'rid', width:80, title: 'ID', sort: true,align:'center',unresize: true}   
+      ,{field:'rid', width:80, title: 'ID', sort: true,align:'center',unresize: true}
+      ,{field:'teachername', width:80, title: '老师',align:'center'}
       ,{field:'positionaltitles', width:180, title: '职称/奖励/证书',align:'center'}
-      ,{field:'evaluationdate', width:180, title: '职称评定日期/获奖日期',align:'center'}     
-      ,{field:'teachername', width:80, title: '负责人',align:'center'}   
+      ,{field:'evaluationdate', width:180, title: '职称评定日期/获奖日期',align:'center'}             
       ,{field:'remark', minWidth:80, title: '备注',align:'center'}    
       ,{field:'right',width:200, title: '操作',toolbar:"#barDemo"}
     ]] 

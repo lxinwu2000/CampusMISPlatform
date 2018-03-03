@@ -1,6 +1,10 @@
 //部门信息add、edit
-layui.use('form', function(){
-	  var form = layui.form;	         	       	     
+layui.use(['form','laydate'], function(){
+	  var form = layui.form
+	      ,laydate=layui.laydate;
+	      laydate.render({
+		    elem: '#date'	  
+		  });
 	  form.on('submit(teacherintroduce)', function(data){			 
 		  var rid=$('#teacherintroducerid').val()
 		      ,data=JSON.stringify(data.field);						
