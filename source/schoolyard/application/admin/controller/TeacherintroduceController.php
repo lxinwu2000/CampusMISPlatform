@@ -5,7 +5,16 @@ class TeacherintroduceController extends CommonController{
   public function index(){      
         return $this->fetch();
     }
-    public function json(){        
+    public function json(){     
+            $m=model('Teacherintroduce');
+            $res=$m->introduce();
+            $name=model('Teachers')->where('rid',$res['teacherid'])->field('cnname')->find();
+           if ($res){
+              $data['state']=1;  
+              $data['cnname']=$name['cnname'];
+              $data['introduce']=$res['introduce'];
+              return json($data);
+          }else {
             $limit=input('get.limit');
             $page=input('get.page');
             $search='%'.input('key').'%'; 
@@ -30,9 +39,58 @@ class TeacherintroduceController extends CommonController{
             $res['data']=$data;
             $res['code']=0;
             $res['count']=$count[0]["count('rid')"];
-            return json($res);
-        
-        
-        
+            return json($res);    
+          }
     }
+    
+    public function add(){
+        $m=model('Teacherintroduce');
+        if (request()->isPost()){
+          if ($m->getinfo()){
+              $data['state']=1;
+              $data['msg']='添加成功';
+              return json($data);
+          }else {
+              $data['state']=0;
+              $data['msg']='添加失败';
+              return json($data);
+          }
+        }else {
+           $info=$m->teachers();
+           $this->assign('teacherslist',$info);
+           return  $this->fetch('info');
+        }
+    }
+    
+ public function edit(){
+          $em=model('Teacherintroduce');       
+          $rid=input('post.id');
+          if ($em->editinfo($rid)){
+              $data['msg']='更新成功';
+              $data['state']=1;
+              return json($data);
+          }           
+        else {
+            $id=input('get.rid');
+            $info=$em->teachers();
+            $this->assign('teacherslist',$info);          
+            $this->assign('editone',Db::name('teacherintroduce')->where('rid',$id)->find());
+            return $this->fetch('info');
+        }
+    }
+    
+    public function delete(){
+        $dm=model('Teacherintroduce');
+        $result=$dm->del();
+        if ($result==1){
+            $data['state']=1;
+            $data['msg']='删除成功';
+            return json($data);
+        }else if($result==2){
+            $data['state']=1;
+            $data['msg']='批量删除成功';
+            return json($data);
+        }
+    }
+    
 }
