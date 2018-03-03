@@ -38,66 +38,41 @@
                                 
      <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
 		  <div class="layui-form-item">
-		    <label class="layui-form-label">手机号</label>
+		    <label class="layui-form-label">职称/奖励/证书</label>
 		    <div class="layui-input-block">
-		      <input type="text" name="phone" value="{$editone.phone}" lay-verify="phone" placeholder="请输入手机" autocomplete="off" class="layui-input">
+		      <input type="text" name="positionaltitles" value="{$editone.positionaltitles}"  placeholder="职称/奖励/证书" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
      </div>	
     
      <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
 		  <div class="layui-form-item">
-		    <label class="layui-form-label">邮箱</label>
+		    <label class="layui-form-label">获奖日期</label>
 		    <div class="layui-input-block">
-		      <input type="text" name="email" value="{$editone.email}"  lay-verify="email" placeholder="请输入邮箱" autocomplete="off" class="layui-input">
+		      <input type="text" name="evaluationdate" id="date" value="{$editone.evaluationdate}" lay-verify="date" placeholder="请输入获奖日期" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
-    </div>	
-    
+    </div>
+    	
     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
-		  <div class="layui-form-item">
-		    <label class="layui-form-label">qq</label>
-		    <div class="layui-input-block">
-		      <input type="text" name="qq" value="{$editone.qq}"  lay-verify="required" placeholder="请输入qq" autocomplete="off" class="layui-input">
-		    </div>
-		  </div>
-    </div>	
-    
-     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
-		  <div class="layui-form-item">
-		    <label class="layui-form-label">微信</label>
-		    <div class="layui-input-block">
-		      <input type="text" name="wechat" value="{$editone.wechat}"  lay-verify="required" placeholder="请输入微信" autocomplete="off" class="layui-input">
-		    </div>
-		  </div>
-    </div>	
-    
-    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
-		  <div class="layui-form-item">
-		    <label class="layui-form-label">支付宝账号</label>
-		    <div class="layui-input-block">
-		      <input type="text" name="alipay" value="{$editone.alipay}"  lay-verify="required" placeholder="请输入支付宝" autocomplete="off" class="layui-input">
-		    </div>
-		  </div>
-    </div>	
-    
-     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
-		 <div class="layui-form-item">                    
-    <label class="layui-form-label">地址:</label>		    
-     <div class="layui-input-block">
-	    <textarea name="address" placeholder="请输入地址" class="layui-textarea">{$editone.address}</textarea>
-	  </div>			    
-  </div>
-    </div>	
-         
-     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
 		<div class="layui-form-item">                    
     <label class="layui-form-label">备注:</label>		    
      <div class="layui-input-block">
-	    <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$editone.remark}</textarea>
+	    <input type="text" name="remark" value="{$editone.remark}"  placeholder="请输入备注" autocomplete="off" class="layui-input" autocomplete="off" class="layui-input">
 	  </div>			    
   </div>
-    </div>	      
+    </div>		
+    	
+     <div class="layui-col-xs12">
+		<div class="layui-form-item">                    
+    <label class="layui-form-label">事迹简介</label>		    
+     <div class="layui-input-block">
+	    <textarea name="introduce" placeholder="请输入事迹简介" class="layui-textarea">{$editone.introduce}</textarea>
+	  </div>			    
+  </div>
+    </div>
+    	          
+        
      
   <div class="layui-form-item">
     <div class="layui-input-block">
