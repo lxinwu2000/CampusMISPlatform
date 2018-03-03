@@ -16,7 +16,15 @@ class LeadersController extends CommonController{
         if (empty($rid)){
             $limit=input('limit');
             $page=input('page');
+// <<<<<<< .mine
+//             $search='%'.input('key').'%';
+//             $where['rid']=array('like',$search);
+// ||||||| .r95
+//             $search='%'.input('key').'%';
+//             $where['cnname']=array('like',$search);
+// =======
 
+// >>>>>>> .r101
             $pages=($page-1)*$limit;
             $data=Leaders::where($where)->where('status',0)->field('rid,teacherid,iscurrent,servicefrom,serviceto,remark')->limit($pages,$limit)->select();
 			foreach($data as $item){
