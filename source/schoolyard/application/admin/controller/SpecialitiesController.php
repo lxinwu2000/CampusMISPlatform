@@ -10,9 +10,7 @@ class SpecialitiesController extends CommonController{
         return $this->fetch();
     }
    
-    public function json(){
-        $id=input('get.rid');
-        if (empty($id)){
+    public function json(){     
             $limit=input('limit');
             $page=input('page');
             $search='%'.input('key').'%';
@@ -24,7 +22,6 @@ class SpecialitiesController extends CommonController{
             $res['code']=0;
             $res['count']=Specialities::where('status',0)->where($where)->count('rid');
             return json($res);
-        }
     }
     
     public function delete(){
