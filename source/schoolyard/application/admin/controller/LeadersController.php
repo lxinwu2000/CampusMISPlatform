@@ -4,37 +4,46 @@ namespace app\admin\controller;
 use think\Request;
 use think\Db;
 use app\admin\model\Leaders;
-use app\admin\model\Teachers;
-
 class LeadersController extends CommonController{
     public function index(){
         return $this->fetch();
     }
    
     public function json(){
-        $id=input('get.rid');
-        if (empty($id)){
+        $rid=input('get.rid'); 
+        $operation=(int)input('get.operation');
+      
+        if (empty($rid)){
             $limit=input('limit');
             $page=input('page');
             $search='%'.input('key').'%';
             $where['cnname']=array('like',$search);
             $pages=($page-1)*$limit;
-            $data=Leaders::where($where)->where('status',0)->limit($pages,$limit)->select();
+            $data=Leaders::where($where)->where('status',0)->field('rid,teacherid,iscurrent,servicefrom,serviceto,remark')->limit($pages,$limit)->select();
 			foreach($data as $item){
+			    $item['teachername']=$item->teacher['cnname'];
 				$item['iscurrentname']='现任领导';
 				if($item['iscurrent']=='1'){
 					$item['iscurrentname']='历任领导';
 				}
-			}
-			//foreach($data as $item){
-				//$item['teachername']=$item->teacher['cnname'];
-				//$item['gradename']=$item->grade['cnname'];
-			//}
+			}		
             $res=array();
             $res['data']=$data;
             $res['code']=0;
             $res['count']=Leaders::where('status',0)->where($where)->count('rid');
             return json($res);
+        }else if($operation==1){
+            $res=model('Leaders')->achievement($rid);
+            $data['state']=1;
+            $data['cnname']=$res['cnname'];
+            $data['achievement']=$res['achievement'];
+            return json($data);
+        }else if($operation==2){
+            $res=model('Leaders')->lintroduce($rid);
+            $data['state']=1;
+            $data['cnname']=$res['cnname'];
+            $data['introduce']=$res['introduce'];
+            return json($data);
         }
     }
     
@@ -84,6 +93,8 @@ class LeadersController extends CommonController{
                 return json($data);
 			}
 		}else{
+		    $res=model('Teachers')->field('rid,cnname')->select();
+		    $this->assign('teacherslist',$res);
 			return $this->fetch('info');
 		} 
  }

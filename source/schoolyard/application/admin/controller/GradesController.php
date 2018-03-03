@@ -10,9 +10,7 @@ class GradesController extends CommonController{
         return $this->fetch();
     }
    
-    public function json(){
-        $id=input('get.rid');
-        if (empty($id)){
+    public function json(){    
             $limit=input('limit');
             $page=input('page');
             $search='%'.input('key').'%';
@@ -25,8 +23,7 @@ class GradesController extends CommonController{
             $res['data']=$data;
             $res['code']=0;
             $res['count']=Grades::where('status',0)->count('rid');
-            return json($res);
-        }
+            return json($res);        
     }
     
     public function delete(){
