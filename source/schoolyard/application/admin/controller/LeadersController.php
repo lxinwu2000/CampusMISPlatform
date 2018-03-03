@@ -16,8 +16,7 @@ class LeadersController extends CommonController{
         if (empty($rid)){
             $limit=input('limit');
             $page=input('page');
-            $search='%'.input('key').'%';
-            //$where['cnname']=array('like',$search);
+
             $pages=($page-1)*$limit;
             $data=Leaders::where($where)->where('status',0)->field('rid,teacherid,iscurrent,servicefrom,serviceto,remark')->limit($pages,$limit)->select();
 			foreach($data as $item){
@@ -26,7 +25,18 @@ class LeadersController extends CommonController{
 				if($item['iscurrent']=='1'){
 					$item['iscurrentname']='历任领导';
 				}
-			}		
+			}
+			
+			//使用for循环实现按名称模糊搜索
+			if(input('key')!=null && !empty(input('key'))){
+				$key=input('key');
+				for($i=0;$i<count($data);$i++){
+					if(!strstr($data[$i]['teachername'],$key)){
+						unset($data[$i]);
+					}
+				}
+			}
+
             $res=array();
             $res['data']=$data;
             $res['code']=0;
