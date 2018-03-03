@@ -3,8 +3,9 @@ layui.use(['form','laydate'], function(){
 	  var form = layui.form
 	      ,laydate=layui.laydate;
 	      laydate.render({
-		    elem: '#date'	  
-		  });
+			    elem: '#date'
+			    ,type: 'datetime'
+		});
 	  form.on('submit(teacherintroduce)', function(data){			 
 		  var rid=$('#teacherintroducerid').val()
 		      ,data=JSON.stringify(data.field);						
