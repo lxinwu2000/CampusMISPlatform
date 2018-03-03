@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="{:config('public.tp5jump')}/layui/css/layui.css" />
+<link rel="stylesheet" href="{:config('public.tp5jump')}/common.css" />
+
+<div class="page-content">
+    <div class="col-sm-6 pull-right">
+       <span class="btn btn-sm btn-primary pull-right" onclick="javascript:window.history.back();">
+            返回上一页
+            <i class="icon-reply icon-only"></i>
+        </span>
+    </div>
+    <div class="page-header">
+         <h1>
+            {:model('menu')->getParentNname()}              
+            <small>
+                <i class="ace-icon fa fa-angle-double-right"></i>
+                {:input('rid')?'编辑':'新增'}
+            </small>
+        </h1>
+    </div><!-- /.page-header -->
+    <div class="row">
+    <input type="hidden" id="leadersrid" value="{$data.rid}"/>
+   <form class="layui-form layui-form-labelsave" action="">
+   <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">	  
+		 <div class="layui-form-item">
+		      <label class="layui-form-label">任职状态:</label>
+				    <div class="layui-input-block">
+				      <select name="iscurrent" id="iscurrent" lay-verify="required">
+				        <option value="0" {eq name="$data.iscurrent" value="0"}selected{/eq}>现任领导</option>
+				        <option value="1" {eq name="$data.iscurrent" value="1"}selected{/eq}>历任领导</option>
+				      </select>
+				    </div>
+		  </div>
+	</div>
+
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">中文名称:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="cnname" value="{$data.cnname}" lay-verify="required" placeholder="请输入中文名称" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">任职开始日期:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="servicefrom" id="servicefrom" value="{$data.servicefrom}"  lay-verify="required" placeholder="请输入任职开始日期" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+	
+	<div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">任职结束日期:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="serviceto" id="serviceto" value="{$data.serviceto}"  placeholder="请输入任职结束日期" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+	</div>
+
+	  <div class="layui-form-item">                    
+		    <label class="layui-form-label">成就/政绩介绍:</label>	
+		     <div class="layui-input-block">
+			    <textarea name="achievement" id="achievement" placeholder="请输入成就/政绩" class="layui-textarea">{$data.achievement}</textarea>
+			  </div>			    
+	  </div>
+
+	<div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+	  <div class="layui-form-item">                    
+		    <label class="layui-form-label">个人简历:</label>	
+		     <div class="layui-input-block">
+			    <textarea name="introduce" id="introduce" placeholder="请输入个人简历" class="layui-textarea">{$data.introduce}</textarea>
+			  </div>			    
+	  </div>
+	</div>
+
+      <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">                    
+		    <label class="layui-form-label">备注:</label>		    
+		     <div class="layui-input-block">
+			    <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$data.remark}</textarea>
+			  </div>			    
+		  </div>
+    </div>	
+     
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="leaders">{:input('rid')?'编辑':'新增'}</button>     
+    </div>
+  </div>
+</form>   
+   
+    </div><!-- /.row -->
+</div><!-- /.page-content -->
+ <script src="{:config('public.tp5jump')}/layui/layui.js"></script>
+ <script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
+  <script src="{:config('public.tp5jump')}/common.js"></script> 
+ <script src="{:config('public.tp5jump')}/leaders_add.js"></script> 

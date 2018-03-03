@@ -336,7 +336,7 @@ create table developmenthis(
 drop table leaders;
 create table leaders(
   rid int auto_increment primary key,#记录id
-  iscurrent bit not null default 0,#任职状态，0:现任;1:非现任
+  iscurrent int not null default 0,#任职状态，0:现任;1:非现任
   teacherid int null,#教师id
   cnname varchar(256) not null,#名称
   servicefrom datetime not null,#任职开始日期
@@ -375,7 +375,7 @@ create table mailboxs(
   senderemail varchar(256) null,#写信人邮箱
   subject varchar(256) not null,#主题
   message mediumtext not null,#信件内容
-  ispublic bit not null default 1,#是否公开,0:公开;1:不公开
+  ispublic int not null default 1,#是否公开,0:公开;1:不公开
   handleuserid int null,#办理用户id
   handletime datetime null,#办理/处理时间
   responsemessage mediumtext null,#反馈结果
