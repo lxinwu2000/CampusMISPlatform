@@ -5,7 +5,7 @@ use think\Request;
 
 class Leaders extends Model{
 	public function Teacher(){
-		return $this->belongsTo('Teachers','teacherid','rid');
+		return $this->belongsTo('Teachers','teacherid','rid')->field('cnname');
 	}
 
 	public function getinfo(){
