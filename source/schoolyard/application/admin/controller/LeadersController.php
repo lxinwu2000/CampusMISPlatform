@@ -17,7 +17,7 @@ class LeadersController extends CommonController{
             $limit=input('limit');
             $page=input('page');
             $search='%'.input('key').'%';
-            $where['cnname']=array('like',$search);
+            //$where['cnname']=array('like',$search);
             $pages=($page-1)*$limit;
             $data=Leaders::where($where)->where('status',0)->field('rid,teacherid,iscurrent,servicefrom,serviceto,remark')->limit($pages,$limit)->select();
 			foreach($data as $item){
@@ -72,6 +72,8 @@ class LeadersController extends CommonController{
                 return json($data);
 			}
 		}else{
+			$res=model('Teachers')->field('rid,cnname')->select();
+		    $this->assign('teacherslist',$res);
 			$rid=input("get.rid");	
 			$data=Leaders::where("rid",$rid)->find();
 			$this->assign("data",$data);			
