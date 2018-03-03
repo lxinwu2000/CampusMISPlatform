@@ -4,9 +4,9 @@ use think\Model;
 use think\Request;
 
 class Leaders extends Model{
-	//public function Teacher(){
-		//return $this->belongsTo('Teachers','teacherid','rid');
-	//}
+	public function Teacher(){
+		return $this->belongsTo('Teachers','teacherid','rid');
+	}
 
 	public function getinfo(){
 		$resquest=Request::instance();
@@ -28,7 +28,14 @@ class Leaders extends Model{
 			return $this->allowField(true)->save($data);
 		}
 	}
-
+//政绩
+public function achievement($rid){
+    return $this->where('rid',$rid)->field('rid,achievement,cnname')->find();
+}
+//简介
+public function lintroduce($rid){
+    return $this->where('rid',$rid)->field('rid,introduce,cnname')->find();
+}
 	public function editinfo($rid){
         $request=Request::instance();
         if ($request->isPost()){
