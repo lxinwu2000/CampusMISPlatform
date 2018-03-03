@@ -21,13 +21,13 @@ layui.use('table', function(){
 	  ,{type:'checkbox'}
       ,{field:'rid', width:80, title: 'ID', sort: true,align:'center',unresize: true}
 	  ,{field:'iscurrentname', width:100, title: '任职状态',align:'center'}
-      ,{field:'cnname', width:80, title: '中文名',align:'center'}
+      ,{field:'teachername', width:80, title: '中文名',align:'center'}
       ,{field:'servicefrom', width:150, title: '任职开始日期',align:'center'}
       ,{field:'serviceto', width:150, title: '任职结束日期',align:'center'}
-      ,{field:'achievement', width:150, title: '成就/政绩',align:'center'}
-      ,{field:'introduce', width:150, title: '个人简历',align:'center'}
+      /*,{field:'achievement', width:150, title: '成就/政绩',align:'center'}
+      ,{field:'introduce', width:150, title: '个人简历',align:'center'}*/
       ,{field:'remark', minWidth:150, title: '备注',align:'center'}    
-      ,{field:'right',width:220, title: '操作',toolbar:"#barDemob"}
+      ,{field:'right',width:260, title: '操作',toolbar:"#barDemob"}
     ]] 
     ,id: 'table_b'//重载表格唯一id
   });
@@ -49,6 +49,54 @@ layui.use('table', function(){
 		   window.location.href="edit?rid="+rid;	    	
 	    		    	
 	    }
+	   else if(obj.event ==='achievement'){
+	    	 $.ajax({
+		 			url : Root+"admin/Leaders/json",
+		 			type : "get",
+		 			data:{"rid":rid,"operation":1},
+		 			dataType: "json",
+		 			success: function(data){
+		 				if(data.state==1){
+		 					layer.open({
+		 						  type: 1,
+		 						  title:data.cnname+'的事迹',
+		 						  skin: 'layui-layer-demo',
+		 						  closeBtn: 1,
+		 						  shadeClose: true,
+		 						  shade: 0.4,
+		 						  area: ['700px', '450px'], 						 
+		 						  content: '<div style="margin:15px;">'+data.achievement+'</div>'
+		 						});				  				
+		 				}else{
+		 				layer.msg(data.msg, {icon: 5});
+		 				}
+		 			},
+		 		});	
+		    }
+	   else if(obj.event ==='lintroduce'){
+	    	 $.ajax({
+		 			url : Root+"admin/Leaders/json",
+		 			type : "get",
+		 			data:{"rid":rid,"operation":2},
+		 			dataType: "json",
+		 			success: function(data){
+		 				if(data.state==1){
+		 					layer.open({
+		 						  type: 1,
+		 						  title:data.cnname+'的简介',
+		 						  skin: 'layui-layer-demo',
+		 						  closeBtn: 1,
+		 						  shadeClose: true,
+		 						  shade: 0.4,
+		 						  area: ['700px', '450px'], 						 
+		 						  content: '<div style="margin:15px;">'+data.introduce+'</div>'
+		 						});				  				
+		 				}else{
+		 				layer.msg(data.msg, {icon: 5});
+		 				}
+		 			},
+		 		});	
+		    }
 	  });
   var $ = layui.$, active = {
 		    reload: function(){
