@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="{:config('public.tp5jump')}/layui/css/layui.css" />
+<link rel="stylesheet" href="{:config('public.tp5jump')}/common.css" />
+
+<div class="page-content">
+    <div class="col-sm-6 pull-right">
+       <span class="btn btn-sm btn-primary pull-right" onclick="javascript:window.history.back();">
+            返回上一页
+            <i class="icon-reply icon-only"></i>
+        </span>
+    </div>
+    <div class="page-header">
+         <h1>
+            {:model('menu')->getParentNname()}              
+            <small>
+                <i class="ace-icon fa fa-angle-double-right"></i>
+                {:input('rid')?'编辑':'新增'}
+            </small>
+        </h1>
+    </div><!-- /.page-header -->
+    <div class="row">
+    <input type="hidden" id="coursesrid" value="{$gradesedit.rid}"/>
+   <form class="layui-form layui-form-labelsave" action="">           
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">中文名称</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="cnname" value="{$gradesedit.cnname}" lay-verify="required" placeholder="请输入中文名称" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">英文名称</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="enname" value="{$gradesedit.enname}"  lay-verify="required" placeholder="请输入英文机构名称" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+    	 
+      <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">                    
+		    <label class="layui-form-label">备注:</label>		    
+		     <div class="layui-input-block">
+			    <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$gradesedit.remark}</textarea>
+			  </div>			    
+		  </div>
+    </div>	
+     
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="courses">{:input('rid')?'编辑':'新增'}</button>     
+    </div>
+  </div>
+</form>   
+   
+    </div><!-- /.row -->
+</div><!-- /.page-content -->
+ <script src="{:config('public.tp5jump')}/layui/layui.js"></script>
+ <script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
+  <script src="{:config('public.tp5jump')}/common.js"></script> 
+ <script src="{:config('public.tp5jump')}/courses_add.js"></script> 
