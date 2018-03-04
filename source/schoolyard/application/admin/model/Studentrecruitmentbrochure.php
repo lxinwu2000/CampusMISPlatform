@@ -51,8 +51,8 @@ class Studentrecruitmentbrochure extends Model{
             }else{
                 $pic =  $this->upload();
                 if($pic['info']== 1){
-                    $url =request()->root(true).'/public'.'/uploads/'.'studentrecruitmentbrochure/'.$pic['savename'];
-                    $imgpath='/public'.'/uploads/'.'studentrecruitmentbrochure/'.$pic['imgpath'];
+                    $url =request()->root(true).'/public'.'/uploads/'.'studentrecruitmentbr/'.$pic['savename'];
+                    $imgpath='/public'.'/uploads/'.'studentrecruitmentbr/'.$pic['imgpath'];
                 }  else {
                     $data["msg"] = $this->error($pic['err']);
                     $data["code"] = 1;
@@ -60,7 +60,7 @@ class Studentrecruitmentbrochure extends Model{
                 $data["msg"]= "上传成功！";
                 $data["code"] = 0;
                 $data["src"] = $url;
-                $data["imgpath"]=$imgpath;
+                $data["imgpath"]=request()->root(true).$imgpath;
                 return $data;
             }
        }
@@ -89,13 +89,12 @@ class Studentrecruitmentbrochure extends Model{
     private  function upload(){
        
         $file = request()->file('file');
-        $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads'. DS . 'studentrecruitmentbrochure');
+        $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads'. DS . 'studentrecruitmentbr');
         $reubfo = array();
         if($info){
             $reubfo['info']= 1;
             $reubfo['savename'] = $info->getSaveName();
-            $reubfo['imgpath']=$info->getSaveName();
-            $data['imgpath']='/public'.'/uploads/'.'studentrecruitmentbrochure/'.$info->getSaveName();
+            $reubfo['imgpath']=$info->getSaveName();          
         }else{
             $reubfo['info']= 0;
             $reubfo['err'] = $file->getError();

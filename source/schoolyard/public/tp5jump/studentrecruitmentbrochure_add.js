@@ -1,7 +1,30 @@
-//招生简章add、edit
-layui.use(['form','layedit'], function(){
-	var form = layui.form,
-		layedit=layui.layedit;
+//招生简章add、edi
+
+layui.use(['form','layedit','upload'], function(){
+	var form = layui.form
+		,layedit=layui.layedit
+	    ,upload=layui.upload; 
+	var uploadInst = upload.render({
+	    elem: '#imgpath' 
+	    ,url: Root+'admin/Studentrecruitmentbr/add'
+	    ,accept: 'images'
+	    ,size:1024
+	    ,before: function(obj){ 
+	       layer.load(1); 
+	      }
+	    ,done: function(ret){
+	    	 if(ret.code==0){ 	
+	             $('.teachersimg').show();
+	             $('#teacherphotopath').html('<input type="text"  name="imgpath" value="' + ret.imgpath+ '"  autocomplete="off" class="layui-input">');	    		
+	    		 $('#teachersimg').html('<img src="' + ret.src + '" width="80">');                         
+                  layer.closeAll('loading'); 
+                 }    		    			    			     
+		    }
+	    ,error: function(){
+	    layer.msg('服务异常');
+	    layer.closeAll('loading'); 
+	    }
+	  });	  
 	var editIndex = layedit.build('content', {  
 	          height: 150
 	          ,tool:['strong' ,'italic' ,'underline' ,'del'  ,'|'  ,'left' ,'center' ,'right' ,'link' ,'face']	

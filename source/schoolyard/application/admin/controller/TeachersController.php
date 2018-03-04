@@ -4,6 +4,7 @@ namespace app\admin\controller;
 use think\Request;
 use think\Db;
 use app\admin\model\Teachers;
+
 class TeachersController extends CommonController{
     public function index(){      
         return $this->fetch();
@@ -125,9 +126,24 @@ class TeachersController extends CommonController{
             $where['number']=$info['number'];
             $hasnumber=Db::name('teachers')->where($where)->find();
             if ($hasnumber){
-                $data['state']=0;
-                $data['msg']='教工编号已经存在';
-                return json($data);
+                if ($hasnumber['status']=='1'){
+                    $data['status']=0;
+                    $res=Db::name('teachers')->where($where)->update($data);
+                    if ($res){
+                        $data['state']=1;
+                        $data['msg']='添加成功';
+                        return json($data);
+                    }else {
+                        $data['state']=0;
+                        $data['msg']='添加失败';
+                        return  json($data);
+                    }
+                }else {
+                    $data['state']=0;
+                    $data['msg']='教工编号已经存在';
+                    return json($data);
+                }
+               
             }else{
                 $res=Db::name('teachers')->insert($info);
                 if ($res){

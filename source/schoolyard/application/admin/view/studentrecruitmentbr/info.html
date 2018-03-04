@@ -19,24 +19,7 @@
     </div><!-- /.page-header -->
     <div class="row">
     <input type="hidden" id="studentrecruitmentbrochurerid" value="{$data.rid}"/>
-   <form class="layui-form layui-form-labelsave" action="">
-    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
-		  <div class="layui-form-item">
-		    <label class="layui-form-label">中文名称:</label>
-		    <div class="layui-input-block">
-		      <input type="text" name="cnname" value="{$data.cnname}" lay-verify="required" placeholder="请输入中文名称" autocomplete="off" class="layui-input">
-		    </div>
-		  </div>
-    </div>
-
-	  <div class="layui-form-item">                    
-		    <label class="layui-form-label">内容详情:</label>	
-		     <div class="layui-input-block">
-			    <textarea name="content" id="content" placeholder="请输入内容详情" class="layui-textarea">{$data.content}</textarea>
-			  </div>			    
-	  </div>
-
-	  <div class="layui-form-item layui-form-labelsave">
+    <div class="layui-form-item layui-form-labelsave">
 		    <label class="layui-form-label">招生简章图片:</label>
 		    <div class="layui-input-block">
 		    <button type="button" class="layui-btn" id="imgpath">
@@ -44,15 +27,51 @@
             </button>
 		    </div>
       </div>
+      
+      
+      
+   <form class="layui-form layui-form-labelsave" action="">
+   
+    <div class="layui-form-item {:input('rid')?'':'teachersimg'}">
+		<label class="layui-form-label">缩略图:</label>
+		<div class="layui-input-block">					
+				<div id="teachersimg">
+				<img src="{$data.imgpath}" width="80" class="simg"/>
+				</div>					
+			</div>
+	</div>	
+	
+	  <div class="layui-form-item" style="display:none;">
+		<div class="layui-input-block">					
+				<div id="teacherphotopath">
+				<input type="text" name="imgpath" value="{$data.imgpath}"autocomplete="off" class="layui-input">
+				</div>					
+			</div>
+	</div>			
+   
+   
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">中文名称:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="cnname" value="{$data.cnname}" lay-verify="required" placeholder="请输入中文名称" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    
 
-      <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+	  <div class="layui-form-item">                    
+		    <label class="layui-form-label">内容详情:</label>	
+		     <div class="layui-input-block">
+			    <textarea name="content" id="content" placeholder="请输入内容详情" class="layui-textarea">{$data.content}</textarea>
+			  </div>			    
+	  </div>
+   
 		  <div class="layui-form-item">                    
 		    <label class="layui-form-label">备注:</label>		    
 		     <div class="layui-input-block">
 			    <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$data.remark}</textarea>
 			  </div>			    
 		  </div>
-    </div>	
+   	
      
   <div class="layui-form-item">
     <div class="layui-input-block">

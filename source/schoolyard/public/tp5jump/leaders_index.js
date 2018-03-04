@@ -20,7 +20,7 @@ layui.use('table', function(){
 	   {type:'numbers',title:'记录号',width:80}
 	  ,{type:'checkbox'}
       ,{field:'rid', width:80, title: 'ID', sort: true,align:'center',unresize: true}
-	  ,{field:'iscurrentname', width:100, title: '任职状态',align:'center'}
+	  ,{field:'iscurrent', width:100, title: '任职状态',align:'center'}
       ,{field:'teachername', width:80, title: '中文名',align:'center'}
       ,{field:'servicefrom', width:150, title: '任职开始日期',align:'center'}
       ,{field:'serviceto', width:150, title: '任职结束日期',align:'center'}

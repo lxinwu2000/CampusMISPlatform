@@ -1,4 +1,5 @@
 //招生简章index
+
 layui.use('table', function(){
   var table = layui.table;
  
@@ -107,4 +108,7 @@ layui.use('table', function(){
   });
     
 });
+
+
+
 
