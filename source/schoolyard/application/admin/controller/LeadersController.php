@@ -12,55 +12,49 @@ class LeadersController extends CommonController{
     public function json(){
         $rid=input('get.rid'); 
         $operation=(int)input('get.operation');
-      
+        $res=model('Leaders')->achievement($rid);
+        $name=model('Teachers')->where('rid',$res['teacherid'])->field('cnname')->find();
         if (empty($rid)){
+            
             $limit=input('limit');
             $page=input('page');
+            $search='%'.input('key').'%';
             $pages=($page-1)*$limit;
-            $data=Leaders::where($where)->where('status',0)->field('rid,teacherid,iscurrent,servicefrom,serviceto,remark')->limit($pages,$limit)->select();
-
-			//增加任职状态别名begin
-			foreach($data as $item){
-			    $item['teachername']=$item->teacher['cnname'];
-				$item['iscurrentname']='现任领导';
-				if($item['iscurrent']=='1'){
-					$item['iscurrentname']='历任领导';
-				}
-			}
-			//增加任职状态别名end
-			
-			//使用for循环实现按名称模糊搜索begin
-			$datares=array();
-			if(input('key')!=null && !empty(input('key'))){
-				$key=input('key');
-				for($i=0;$i<count($data);$i++){
-					if(stristr($data[$i]['teachername'],$key)!==FALSE){
-						array_push($datares,$data[$i]);
-					}
-				}
-			}else{
-				for($i=0;$i<count($data);$i++){
-					array_push($datares,$data[$i]);
-				}
-			}
-			//使用for循环实现按名称模糊搜索end
-			unset($data);
-
+            $limts="limit $pages,$limit";
+            
+            $sql="SELECT ZD.*, ZT.cnname AS teachername
+        FROM zxcms_leaders AS ZD, zxcms_teachers AS ZT
+        WHERE ZT.rid= ZD.teacherid AND ZT.status=0 AND ZD.status=0";
+            
+            $count="SELECT count('rid') FROM zxcms_leaders AS ZD, zxcms_teachers AS ZT
+        WHERE ZT.rid= ZD.teacherid AND ZT.status=0 AND ZD.status=0";
+            if (!empty($search)){
+                $sql=$sql.' '."AND (ZT.`cnname` LIKE '%$search%')";
+                $count=$count.' '."AND (ZT.`cnname` LIKE '%$search%')";
+            }
+            $data=Db::query($sql.' '.$limts);
+            for ($i=0;$i<count($data);$i++){
+                if ($data[$i]['iscurrent']=='1'){
+                    $data[$i]['iscurrent']='历任领导';
+                }else{
+                    $data[$i]['iscurrent']='现任领导';
+                }
+            }
+            $count=Db::query($count);
             $res=array();
-            $res['data']=$datares;
+            $res['data']=$data;
             $res['code']=0;
-            $res['count']=count($datares);
-            return json($res);
-        }else if($operation==1){
-            $res=model('Leaders')->achievement($rid);
+            $res['count']=$count[0]["count('rid')"];
+            return json($res);           
+        }else if($operation==1){                      
             $data['state']=1;
-            //$data['cnname']=$res['cnname'];
+            $data['cnname']=$name['cnname'];
             $data['achievement']=$res['achievement'];
             return json($data);
         }else if($operation==2){
             $res=model('Leaders')->lintroduce($rid);
             $data['state']=1;
-            //$data['cnname']=$res['cnname'];
+            $data['cnname']=$name['cnname'];
             $data['introduce']=$res['introduce'];
             return json($data);
         }

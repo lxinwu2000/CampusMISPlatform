@@ -11,8 +11,7 @@ class CoursesController extends CommonController{
     }
    
     public function json(){
-        $id=input('get.rid');
-        if (empty($id)){
+        
             $limit=input('limit');
             $page=input('page');
             $search='%'.input('key').'%';
@@ -25,7 +24,7 @@ class CoursesController extends CommonController{
             $res['code']=0;
             $res['count']=Courses::where('status',0)->where($where)->count('rid');
             return json($res);
-        }
+        
     }
     
     public function delete(){

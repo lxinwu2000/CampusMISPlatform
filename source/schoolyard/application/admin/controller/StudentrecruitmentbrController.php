@@ -19,7 +19,6 @@ class StudentrecruitmentbrController extends CommonController{
             $where['cnname']=array('like',$search);
             $pages=($page-1)*$limit;
             $data=Studentrecruitmentbrochure::where($where)->where('status',0)->limit($pages,$limit)->select();
-
             $res=array();
             $res['data']=$data;
             $res['code']=0;

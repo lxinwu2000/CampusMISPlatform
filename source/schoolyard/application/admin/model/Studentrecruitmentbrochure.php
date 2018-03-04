@@ -85,4 +85,21 @@ class Studentrecruitmentbrochure extends Model{
             }
         }
     }
+    
+    private  function upload(){
+       
+        $file = request()->file('file');
+        $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads'. DS . 'studentrecruitmentbrochure');
+        $reubfo = array();
+        if($info){
+            $reubfo['info']= 1;
+            $reubfo['savename'] = $info->getSaveName();
+            $reubfo['imgpath']=$info->getSaveName();
+            $data['imgpath']='/public'.'/uploads/'.'studentrecruitmentbrochure/'.$info->getSaveName();
+        }else{
+            $reubfo['info']= 0;
+            $reubfo['err'] = $file->getError();
+        }
+        return $reubfo;
+    }
 }

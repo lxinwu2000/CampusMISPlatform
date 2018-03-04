@@ -58,7 +58,7 @@ class Organizeinfo extends Model{
             db('organizeinfo')->where('rid', $rid)->update($data);           
         }else{
             $reubfo['info']= 0;
-            $reubfo['err'] = $file->getError();;
+            $reubfo['err'] = $file->getError();
         }
         return $reubfo;
     }

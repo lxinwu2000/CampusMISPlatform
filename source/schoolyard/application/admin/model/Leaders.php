@@ -30,11 +30,11 @@ class Leaders extends Model{
 	}
 //政绩
 public function achievement($rid){
-    return $this->where('rid',$rid)->field('rid,achievement,cnname')->find();
+    return $this->where('rid',$rid)->field('rid,teacherid,achievement')->find();
 }
 //简介
 public function lintroduce($rid){
-    return $this->where('rid',$rid)->field('rid,introduce,cnname')->find();
+    return $this->where('rid',$rid)->field('rid,teacherid,introduce')->find();
 }
 	public function editinfo($rid){
         $request=Request::instance();
