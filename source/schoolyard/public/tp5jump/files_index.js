@@ -1,10 +1,10 @@
-//入学登记信息index
+//文件管理信息index
 layui.use('table', function(){
   var table = layui.table;
  
   table.render({    //表格渲染 
      elem: '#positionstable'
-    ,url:Root+'admin/Registration/json'
+    ,url:Root+'admin/Files/json'
     ,height: 'full-150'   
     ,cellMinWidth: 80 
     ,page: { //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
@@ -20,12 +20,11 @@ layui.use('table', function(){
 	   {type:'numbers',title:'记录号',width:80}
 	  ,{type:'checkbox'}
       ,{field:'rid', width:80, title: 'ID', sort: true,align:'center',unresize: true}
-	  ,{field:'name', width:100, title: '名称',align:'center'}
-      ,{field:'address', width:80, title: '地址',align:'center'}
-      ,{field:'phone', width:150, title: '电话',align:'center'}
-      ,{field:'email', width:150, title: '邮箱',align:'center'}
-      ,{field:'regmessage', width:150, title: '登记信息',align:'center'}
-      ,{field:'score', width:150, title: '分数',align:'center'}
+	  ,{field:'filename', width:100, title: '文件名称',align:'center'}
+      ,{field:'filedesc', width:80, title: '文件描述',align:'center'}
+      ,{field:'filepath', width:150, title: '文件路径',align:'center'}
+      ,{field:'content', width:150, title: '文件内容',align:'center'}
+      ,{field:'downtimes', width:150, title: '下载次数',align:'center'}
       ,{field:'remark', minWidth:150, title: '备注',align:'center'}    
       ,{field:'right',width:260, title: '操作',toolbar:"#barDemob"}
     ]] 
@@ -39,7 +38,7 @@ layui.use('table', function(){
 	    //删除
 	   if(obj.event === 'del'){
 	      layer.confirm('真的删除这条数据么', function(index){	    		    	
-	    	 Ajaxalls(rid,null,2,'admin/Registration/delete');
+	    	 Ajaxalls(rid,null,2,'admin/Files/delete');
 //	    	 obj.del();
 	    	
 	      });
@@ -51,7 +50,7 @@ layui.use('table', function(){
 	    }
 	   else if(obj.event ==='achievement'){
 	    	 $.ajax({
-		 			url : Root+"admin/Registration/json",
+		 			url : Root+"admin/Files/json",
 		 			type : "get",
 		 			data:{"rid":rid,"operation":1},
 		 			dataType: "json",
@@ -75,7 +74,7 @@ layui.use('table', function(){
 		    }
 	   else if(obj.event ==='lintroduce'){
 	    	 $.ajax({
-		 			url : Root+"admin/Registration/json",
+		 			url : Root+"admin/Files/json",
 		 			type : "get",
 		 			data:{"rid":rid,"operation":2},
 		 			dataType: "json",
@@ -125,7 +124,7 @@ layui.use('table', function(){
         		 //ajax从数据库删除
         		 layer.confirm('真的删除这些数据吗', function(index){       		    	
         		    	 $.ajax({
-        		 			url : Root+"admin/Registration/delete",
+        		 			url : Root+"admin/Files/delete",
         		 			type : "post",
         		 			data:{"checkedid":checkedid},
         		 			dataType: "json",

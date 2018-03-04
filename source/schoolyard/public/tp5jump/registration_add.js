@@ -1,4 +1,4 @@
-//领导信息add、edit
+//入学登记信息add、edit
 layui.use(['form','laydate','layedit'], function(){
 	var form = layui.form,laydate=layui.laydate,
 	layedit=layui.layedit;
