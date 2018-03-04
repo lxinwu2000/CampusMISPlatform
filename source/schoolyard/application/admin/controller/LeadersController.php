@@ -16,17 +16,10 @@ class LeadersController extends CommonController{
         if (empty($rid)){
             $limit=input('limit');
             $page=input('page');
-// <<<<<<< .mine
-//             $search='%'.input('key').'%';
-//             $where['rid']=array('like',$search);
-// ||||||| .r95
-//             $search='%'.input('key').'%';
-//             $where['cnname']=array('like',$search);
-// =======
-
-// >>>>>>> .r101
             $pages=($page-1)*$limit;
             $data=Leaders::where($where)->where('status',0)->field('rid,teacherid,iscurrent,servicefrom,serviceto,remark')->limit($pages,$limit)->select();
+
+			//增加任职状态别名begin
 			foreach($data as $item){
 			    $item['teachername']=$item->teacher['cnname'];
 				$item['iscurrentname']='现任领导';
@@ -34,32 +27,40 @@ class LeadersController extends CommonController{
 					$item['iscurrentname']='历任领导';
 				}
 			}
+			//增加任职状态别名end
 			
-			//使用for循环实现按名称模糊搜索
+			//使用for循环实现按名称模糊搜索begin
+			$datares=array();
 			if(input('key')!=null && !empty(input('key'))){
 				$key=input('key');
 				for($i=0;$i<count($data);$i++){
-					if(!strstr($data[$i]['teachername'],$key)){
-						unset($data[$i]);
+					if(stristr($data[$i]['teachername'],$key)!==FALSE){
+						array_push($datares,$data[$i]);
 					}
 				}
+			}else{
+				for($i=0;$i<count($data);$i++){
+					array_push($datares,$data[$i]);
+				}
 			}
+			//使用for循环实现按名称模糊搜索end
+			unset($data);
 
             $res=array();
-            $res['data']=$data;
+            $res['data']=$datares;
             $res['code']=0;
-            $res['count']=Leaders::where('status',0)->where($where)->count('rid');
+            $res['count']=count($datares);
             return json($res);
         }else if($operation==1){
             $res=model('Leaders')->achievement($rid);
             $data['state']=1;
-            $data['cnname']=$res['cnname'];
+            //$data['cnname']=$res['cnname'];
             $data['achievement']=$res['achievement'];
             return json($data);
         }else if($operation==2){
             $res=model('Leaders')->lintroduce($rid);
             $data['state']=1;
-            $data['cnname']=$res['cnname'];
+            //$data['cnname']=$res['cnname'];
             $data['introduce']=$res['introduce'];
             return json($data);
         }
