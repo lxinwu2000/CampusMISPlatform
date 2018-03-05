@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="{:config('public.tp5jump')}/layui/css/layui.css" />
+<link rel="stylesheet" href="{:config('public.tp5jump')}/common.css" />
+
+<div class="page-content">
+    <div class="col-sm-6 pull-right">
+       <span class="btn btn-sm btn-primary pull-right" onclick="javascript:window.history.back();">
+            返回上一页
+            <i class="icon-reply icon-only"></i>
+        </span>
+    </div>
+    <div class="page-header">
+         <h1>
+            {:model('menu')->getParentNname()}              
+            <small>
+                <i class="ace-icon fa fa-angle-double-right"></i>
+                {:input('rid')?'编辑':'新增'}
+            </small>
+        </h1>
+    </div><!-- /.page-header -->
+    <div class="row">
+    <input type="hidden" id="mailboxsrid" value="{$data.rid}"/>
+   <form class="layui-form layui-form-labelsave" action="">           
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">收件人:</label>
+		    <div class="layui-input-block">
+				  <select name="receiverid"  lay-verify="required" >
+					<option value="">请选择</option>	
+					{foreach name="teacherslist" item="vo"}			        
+					<option value="{$vo.rid}" {eq name="vo.rid" value="$data.receiverid"}selected{/eq}>{$vo.cnname}</option>
+					{/foreach}
+				  </select>
+			</div>
+		  </div>
+    </div>	
+    
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">写信人名称:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="sendername" value="{$data.sendername}"  lay-verify="required" placeholder="请输入写信人名称" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+	<div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">写信人地址:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="senderaddress" value="{$data.senderaddress}" placeholder="请输入写信人地址" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+	<div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">写信人电话:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="senderphone" value="{$data.senderphone}"  lay-verify="required" placeholder="请输入写信人电话" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+	<div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">写信人邮箱:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="senderemail" value="{$data.senderemail}"  lay-verify="required" placeholder="请输入写信人名称" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+    
+	<div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">主题:</label>		   
+		       <div class="layui-input-block">
+				  <input type="text" name="subject" value="{$data.subject}"  lay-verify="required" placeholder="请输入主题" autocomplete="off" class="layui-input">
+			    </div>		    
+		  </div>
+	</div>
+
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">                    
+		    <label class="layui-form-label">信件内容:</label>		    
+		     <div class="layui-input-block">
+			    <textarea name="message" placeholder="请输入信件内容" class="layui-textarea">{$data.message}</textarea>
+			  </div>			    
+		  </div>
+    </div>
+
+	<div class="layui-col-xs12 layui-col-md6 layui-col-lg6">	  
+		 <div class="layui-form-item">
+		      <label class="layui-form-label">是否公开:</label>
+				    <div class="layui-input-block">
+				      <select name="ispublic" id="ispublic" lay-verify="required">
+				        <option value="0" {eq name="$data.ispublic" value="0"}selected{/eq}>公开</option>
+				        <option value="1" {eq name="$data.ispublic" value="1"}selected{/eq}>不公开</option>
+				      </select>
+				    </div>
+		  </div>
+	</div>
+
+      <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">                    
+		    <label class="layui-form-label">备注:</label>		    
+		     <div class="layui-input-block">
+			    <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$data.remark}</textarea>
+			  </div>			    
+		  </div>
+    </div>	
+     
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="mailboxs">{:input('rid')?'编辑':'新增'}</button>     
+    </div>
+  </div>
+</form>   
+   
+    </div><!-- /.row -->
+</div><!-- /.page-content -->
+ <script src="{:config('public.tp5jump')}/layui/layui.js"></script>
+ <script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
+  <script src="{:config('public.tp5jump')}/common.js"></script> 
+ <script src="{:config('public.tp5jump')}/mailboxs_add.js"></script> 
