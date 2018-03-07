@@ -1,0 +1,157 @@
+<link rel="stylesheet" href="{:config('public.tp5jump')}/layui/css/layui.css" />
+<link rel="stylesheet" href="{:config('public.tp5jump')}/common.css" />
+
+<div class="page-content">
+    <div class="col-sm-6 pull-right">
+       <span class="btn btn-sm btn-primary pull-right" onclick="javascript:window.history.back();">
+            返回上一页
+            <i class="icon-reply icon-only"></i>
+        </span>
+    </div>
+    <div class="page-header">
+         <h1>
+            {:model('menu')->getParentNname()}              
+            <small>
+                <i class="ace-icon fa fa-angle-double-right"></i>
+                {:input('rid')?'编辑':'新增'}
+            </small>
+        </h1>
+    </div><!-- /.page-header -->
+    <div class="row">
+    <input type="hidden" id="recruitplanrid" value="{$data.rid}"/>
+   <form class="layui-form layui-form-labelsave" action="">           
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">岗位:</label>
+		    <div class="layui-input-block">
+			  <select name="positionid" lay-verify="required">
+			  <option value="">请选择</option>
+			  {foreach name="positionslist" id="vo"}
+				<option value="{$vo.rid}" {eq name="vo.rid" value="$data.positionid"}selected{/eq}>{$vo.cnname}</option>
+			  {/foreach}
+			  </select>
+		    </div>
+		  </div>
+    </div>	
+    
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">招聘人数:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="totalnumber" value="{$data.totalnumber}"  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+	
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">最低薪资:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="salarymin" value="{$data.salarymin}"  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">最高薪资:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="salarymax" value="{$data.salarymax}"  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">学历要求:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="educationlevel" value="{$data.educationlevel}"  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">工作地点:</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="workaddress" value="{$data.workaddress}"  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">工作经验(下限):</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="experiencemin" value="{$data.experiencemin}"  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">工作经验(上限):</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="experiencemax" value="{$data.experiencemax}"  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+	<div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">职位描述:</label>
+		    <div class="layui-input-block">
+			  <textarea name="positiondesc" placeholder="请输入" class="layui-textarea">{$data.positiondesc}</textarea>
+			</div>
+		  </div>
+    </div>
+
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">任职要求:</label>
+		    <div class="layui-input-block">
+			  <textarea name="requirement" placeholder="请输入" class="layui-textarea">{$data.requirement}</textarea>
+			</div>
+		  </div>
+    </div>
+
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">开始日期:</label>
+		    <div class="layui-input-block">
+		      <input type="text" id="fromdate" name="fromdate" value="{$data.fromdate}" placeholder="请选择" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">结束日期:</label>
+		    <div class="layui-input-block">
+		      <input type="text" id="todate" name="todate" value="{$data.todate}" placeholder="请选择" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>
+
+      <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">                    
+		    <label class="layui-form-label">备注:</label>		    
+		     <div class="layui-input-block">
+			    <textarea name="remark" placeholder="请输入" class="layui-textarea">{$data.remark}</textarea>
+			  </div>			    
+		  </div>
+    </div>	
+     
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="recruitplan">{:input('rid')?'编辑':'新增'}</button>     
+    </div>
+  </div>
+</form>   
+   
+    </div><!-- /.row -->
+</div><!-- /.page-content -->
+ <script src="{:config('public.tp5jump')}/layui/layui.js"></script>
+ <script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
+  <script src="{:config('public.tp5jump')}/common.js"></script> 
+ <script src="{:config('public.tp5jump')}/recruitplan_add.js"></script> 
