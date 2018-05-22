@@ -1,6 +1,6 @@
 //全局根目录
 var Root="";
-Root='/'+'schoolyard'+'/';
+Root='/';
 
 //layui
 layui.use(['element','layer'], function(){
