@@ -47,7 +47,7 @@ class Menu {
                     $title = $val["name"];
 
                     if (!empty($val["a"])) {
-                        $url = '__ROOT__/admin/' . $val['c'] . '/' . $val['a'];
+                        $url = '/admin/' . $val['c'] . '/' . $val['a'];
                         $val['data'] ? $url.='?' . $val['data'] : '';
                     }
 
