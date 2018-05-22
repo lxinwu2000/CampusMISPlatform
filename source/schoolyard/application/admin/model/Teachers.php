@@ -40,8 +40,8 @@ class Teachers extends Model{
             }else{
                 $pic =  $this->upload();
                 if($pic['info']== 1){
-                    $url =request()->root(true).'/public'.'/uploads/'.'teachers/'.$pic['savename'];
-                    $photopath='/public'.'/uploads/'.'teachers/'.$pic['photopath'];
+                    $url =request()->root(true).'/uploads/'.'teachers/'.$pic['savename'];
+                    $photopath='/uploads/'.'teachers/'.$pic['photopath'];
                 }  else {
                     $data["msg"] = $this->error($pic['err']);
                     $data["code"] = 1;

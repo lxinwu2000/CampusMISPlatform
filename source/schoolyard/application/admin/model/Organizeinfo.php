@@ -19,8 +19,8 @@ class Organizeinfo extends Model{
             }else{
                 $pic =  $this->upload();
                 if($pic['info']== 1){
-                    $url =request()->root(true).'/public'.'/uploads/'.'logo/'.$pic['savename'];
-                    $logopath='/public'.'/uploads/'.'logo/'.$pic['logopath'];
+                    $url =request()->root(true).'/uploads/'.'logo/'.$pic['savename'];
+                    $logopath='/uploads/'.'logo/'.$pic['logopath'];
                     $ret["msg"]= "上传成功！";
                     $ret["code"] = 0;
                     $ret["src"] = $url;                 
@@ -32,7 +32,7 @@ class Organizeinfo extends Model{
     
     public function getinfo(){
         $resquest=Request::instance();
-        $info=json_decode($resquest->post('data'),true);
+        $info=json_decode($resquest->param('data'),true);
         $info['createtime']=date('Y-m-d H:i:s');
         $info['createuser']=session('user_id');
         $rid=input('post.id');
@@ -45,7 +45,7 @@ class Organizeinfo extends Model{
     }
     
     private  function upload(){
-        deldir('./public/uploads/logo');
+        deldir('./uploads/logo');
         $rid=db('organizeinfo')->count();
         $file = request()->file('file');
         $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads'. DS . 'logo');
@@ -54,7 +54,7 @@ class Organizeinfo extends Model{
             $reubfo['info']= 1;
             $reubfo['savename'] = $info->getSaveName();
             $reubfo['logopath']=$info->getSaveName();
-            $data['logopath']='/public'.'/uploads/'.'logo/'.$info->getSaveName();
+            $data['logopath']='/uploads/'.'logo/'.$info->getSaveName();
             db('organizeinfo')->where('rid', $rid)->update($data);           
         }else{
             $reubfo['info']= 0;
