@@ -217,8 +217,8 @@ return [
     ],
     'encry_key' => 'zxcms',
     'public'=>[
-        'static'=>'__ROOT__/public/static',
-        'tp5jump'=>'__ROOT__/public/tp5jump',
+        'static'=>'/static',
+        'tp5jump'=>'/tp5jump',
        
 	],
 ];
