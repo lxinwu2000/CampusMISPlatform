@@ -1,0 +1,160 @@
+<link rel="stylesheet" href="{:config('public.tp5jump')}/layui/css/layui.css" />
+<link rel="stylesheet" href="{:config('public.tp5jump')}/common.css" />
+<div class="page-content">
+    <div class="col-sm-6 pull-right">
+      <span class="btn btn-sm btn-primary pull-right" onclick="javascript:window.history.back();">
+            返回上一页
+            <i class="icon-reply icon-only"></i>
+        </span>
+    </div>
+    <div class="page-header">
+        <h1>
+            {:model('menu')->getParentNname()}              
+            <small>
+                <i class="ace-icon fa fa-angle-double-right"></i>
+                {:input('rid')?'编辑':'新增'}
+            </small>
+        </h1>
+    </div><!-- /.page-header -->
+    <div class="row">
+   <input type="hidden" id="teachersrid" value="{$editone.rid}"/>
+        
+     
+     <form class="layui-form layui-form-labelsave" action="">
+               
+   
+	
+	  <div class="layui-form-item" style="display:none;">
+		<div class="layui-input-block">					
+				<div id="teacherphotopath">
+				<input type="text" name="photopath" value="{$editone.photopath}"autocomplete="off" class="layui-input">
+				</div>					
+			</div>
+	</div>			 
+                
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">教工编号</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="number" value="{$editone.number}" lay-verify="required" placeholder="请输入教工编号" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">中文名</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="cnname" value="{$editone.cnname}"  lay-verify="required" placeholder="请输入中文名" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">英文名</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="enname" value="{$editone.enname}"  lay-verify="required" placeholder="请输入英文名" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">办公室</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="office" value="{$editone.office}"  lay-verify="required" placeholder="请输入办公室" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+    <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">身份证</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="idcard" value="{$editone.idcard}"  lay-verify="required" placeholder="请输入身份证" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">生日</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="birthday" id="birthday" value="{$editone.birthday}"  lay-verify="required" placeholder="请输入生日" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+      <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">入职日期</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="entrydate" id="entrydate" value="{$editone.entrydate}"  lay-verify="required" placeholder="请输入入职日期" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">	  
+		 <div class="layui-form-item">
+		      <label class="layui-form-label">学历</label>
+				    <div class="layui-input-block">
+				      <select name="educationlevel" id="educationlevel" lay-verify="required">
+				        <option value="">请选择学历</option>				        
+				        <option value="博士后">博士后</option>
+				        <option value="博士">博士</option>
+				        <option value="硕士">硕士</option>
+				        <option value="研究生">研究生</option>
+				        <option value="大学本科">大学本科</option>
+				        <option value="大学专科（大专）">大学专科（大专）</option>
+				        <option value="高中/职中/中专">高中/职中/中专</option>
+				        <option value="初中">初中</option>
+				        <option value="小学">小学</option>
+				      </select>
+				    </div>
+		  </div>
+		  
+    </div>	
+    
+     <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">毕业院校</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="graduateinstitutions" value="{$editone.graduateinstitutions}"  lay-verify="required" placeholder="请输入毕业院校" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+    </div>	
+    
+    
+      <div class="layui-col-xs12 layui-col-md6 layui-col-lg6">
+		  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">工龄</label>   
+    <div class="layui-input-block">
+       <input type="text" name="workingyears" value="{$editone.workingyears}"  lay-verify="required" placeholder="请输入工龄" autocomplete="off" class="layui-input">  
+    </div>
+  </div>
+    </div>	
+       
+    
+  <div class="layui-form-item">                    
+    <label class="layui-form-label">备注:</label>		    
+     <div class="layui-input-block">
+	    <textarea name="remark" placeholder="请输入备注" class="layui-textarea">{$editone.remark}</textarea>
+	  </div>			    
+  </div>
+   	
+     
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="teachers">{:input('rid')?'编辑':'新增'}教师信息</button>     
+    </div>
+  </div>
+</form>   
+        
+    </div><!-- /.row -->
+</div><!-- /.page-content -->
+<script src="{:config('public.tp5jump')}/layui/layui.js"></script>
+<script src="{:config('public.static')}/ace1.4/assets/js/jquery-2.1.4.min.js"></script> 
+<script src="{:config('public.tp5jump')}/common.js"></script> 
+<script src="{:config('public.tp5jump')}/news_add.js"></script>
+
